@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:FunctionTypeConcepts="http:///schemas/FunctionTypeConcepts/_79pfU_H7EeaYuI2u_kTC4A/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/FunctionTypeConcepts/_79pfU_H7EeaYuI2u_kTC4A/1 FunctionTypeConcepts.profile.uml#_79pfVPH7EeaYuI2u_kTC4A">
+  <uml:Model xmi:id="_gMrIMPH6EeaYuI2u_kTC4A" name="RBSConfigurationReferenceModel">
+    <packagedElement xmi:type="uml:Package" xmi:id="_LY46wPH7EeaYuI2u_kTC4A" name="FunctionTypesModelling">
+      <packagedElement xmi:type="uml:Class" xmi:id="_ZmtEUPH7EeaYuI2u_kTC4A" name="RBS Cell">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_mmacAPH7EeaYuI2u_kTC4A" name="RAT Type" type="_vvoqUPH7EeaYuI2u_kTC4A"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_vvoqUPH7EeaYuI2u_kTC4A" name="RatTypeEnum"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_yGX4MPH7EeaYuI2u_kTC4A" name="Frequency">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_3x0_IPH7EeaYuI2u_kTC4A" name="downlink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_4dEUgPH7EeaYuI2u_kTC4A" name="downlink frequeny max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_AbMosPH8EeaYuI2u_kTC4A" name="uplink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_A0_BsPH8EeaYuI2u_kTC4A" name="uplink frequency max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_OCfk0PH8EeaYuI2u_kTC4A" name="CopyOf_uplink frequency max_1">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_OCfk0fH8EeaYuI2u_kTC4A" name="downlink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_OCfk0vH8EeaYuI2u_kTC4A" name="downlink frequeny max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_OCfk0_H8EeaYuI2u_kTC4A" name="uplink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_OCfk1PH8EeaYuI2u_kTC4A" name="uplink frequency max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+        </nestedClassifier>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_OlQToPH8EeaYuI2u_kTC4A" name="Coverage">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_OlQTofH8EeaYuI2u_kTC4A" name="type of coverage" type="_MbHEQPOREeaVCtNpv5jAGQ"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_OlQTpfH8EeaYuI2u_kTC4A" name="CopyOf_uplink frequency max_1">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_OlQTpvH8EeaYuI2u_kTC4A" name="downlink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_OlQTp_H8EeaYuI2u_kTC4A" name="downlink frequeny max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_OlQTqPH8EeaYuI2u_kTC4A" name="uplink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_OlQTqfH8EeaYuI2u_kTC4A" name="uplink frequency max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_Qm3mEPH8EeaYuI2u_kTC4A" name="CopyOf_CopyOf_uplink frequency max_1_1">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Qm3mEfH8EeaYuI2u_kTC4A" name="downlink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Qm3mEvH8EeaYuI2u_kTC4A" name="downlink frequeny max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Qm3mE_H8EeaYuI2u_kTC4A" name="uplink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Qm3mFPH8EeaYuI2u_kTC4A" name="uplink frequency max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_Qm3mFfH8EeaYuI2u_kTC4A" name="CopyOf_uplink frequency max_1">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_Qm3mFvH8EeaYuI2u_kTC4A" name="downlink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_Qm3mF_H8EeaYuI2u_kTC4A" name="downlink frequeny max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_Qm3mGPH8EeaYuI2u_kTC4A" name="uplink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_Qm3mGfH8EeaYuI2u_kTC4A" name="uplink frequency max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          </nestedClassifier>
+        </nestedClassifier>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_QydyEPH8EeaYuI2u_kTC4A" name="UL Antenna Stream">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_QydyEfH8EeaYuI2u_kTC4A" name="antenna relative position"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_QydyEvH8EeaYuI2u_kTC4A" name="antenna polarization" type="_kyNK8POREeaVCtNpv5jAGQ"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_QydyFfH8EeaYuI2u_kTC4A" name="CopyOf_uplink frequency max_1">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_QydyFvH8EeaYuI2u_kTC4A" name="downlink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_QydyF_H8EeaYuI2u_kTC4A" name="downlink frequeny max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_QydyGPH8EeaYuI2u_kTC4A" name="uplink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_QydyGfH8EeaYuI2u_kTC4A" name="uplink frequency max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_UpIhoPH8EeaYuI2u_kTC4A" name="CopyOf_CopyOf_uplink frequency max_1_1">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_UpIhofH8EeaYuI2u_kTC4A" name="downlink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_UpIhovH8EeaYuI2u_kTC4A" name="downlink frequeny max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_UpIho_H8EeaYuI2u_kTC4A" name="uplink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_UpIhpPH8EeaYuI2u_kTC4A" name="uplink frequency max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_UpIhpfH8EeaYuI2u_kTC4A" name="CopyOf_uplink frequency max_1">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_UpIhpvH8EeaYuI2u_kTC4A" name="downlink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_UpIhp_H8EeaYuI2u_kTC4A" name="downlink frequeny max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_UpIhqPH8EeaYuI2u_kTC4A" name="uplink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_UpIhqfH8EeaYuI2u_kTC4A" name="uplink frequency max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          </nestedClassifier>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_VLwtkPH8EeaYuI2u_kTC4A" name="CopyOf_CopyOf_CopyOf_uplink frequency max_1_1_1">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_VLwtkfH8EeaYuI2u_kTC4A" name="downlink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_VLwtkvH8EeaYuI2u_kTC4A" name="downlink frequeny max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_VLwtk_H8EeaYuI2u_kTC4A" name="uplink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_VLwtlPH8EeaYuI2u_kTC4A" name="uplink frequency max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_VLwtlfH8EeaYuI2u_kTC4A" name="CopyOf_uplink frequency max_1">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_VLwtlvH8EeaYuI2u_kTC4A" name="downlink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_VLwtl_H8EeaYuI2u_kTC4A" name="downlink frequeny max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_VLwtmPH8EeaYuI2u_kTC4A" name="uplink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_VLwtmfH8EeaYuI2u_kTC4A" name="uplink frequency max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_VLwtmvH8EeaYuI2u_kTC4A" name="CopyOf_CopyOf_uplink frequency max_1_1">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_VLwtm_H8EeaYuI2u_kTC4A" name="downlink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_VLwtnPH8EeaYuI2u_kTC4A" name="downlink frequeny max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_VLwtnfH8EeaYuI2u_kTC4A" name="uplink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_VLwtnvH8EeaYuI2u_kTC4A" name="uplink frequency max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_VLwtn_H8EeaYuI2u_kTC4A" name="CopyOf_uplink frequency max_1">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_VLwtoPH8EeaYuI2u_kTC4A" name="downlink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_VLwtofH8EeaYuI2u_kTC4A" name="downlink frequeny max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_VLwtovH8EeaYuI2u_kTC4A" name="uplink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_VLwto_H8EeaYuI2u_kTC4A" name="uplink frequency max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+            </nestedClassifier>
+          </nestedClassifier>
+        </nestedClassifier>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Q6tIEPH8EeaYuI2u_kTC4A" name="DL Antenna Stream">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Q6tIEfH8EeaYuI2u_kTC4A" name="antenna relative position"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Q6tIE_H8EeaYuI2u_kTC4A" name="antenna polarization" type="_kyNK8POREeaVCtNpv5jAGQ"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_Q6tIFfH8EeaYuI2u_kTC4A" name="CopyOf_uplink frequency max_1">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Q6tIFvH8EeaYuI2u_kTC4A" name="downlink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Q6tIF_H8EeaYuI2u_kTC4A" name="downlink frequeny max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Q6tIGPH8EeaYuI2u_kTC4A" name="uplink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Q6tIGfH8EeaYuI2u_kTC4A" name="uplink frequency max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+        </nestedClassifier>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Vb2_EPH8EeaYuI2u_kTC4A" name="Antenna Coverage">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Vb2_EvH8EeaYuI2u_kTC4A" name="longitude"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Vb2_E_H8EeaYuI2u_kTC4A" name="height"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Vb2_FPH8EeaYuI2u_kTC4A" name="beam direction horizontal"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_CcT9APOKEeaVCtNpv5jAGQ" name="beam direction vertical"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_GDgtMPOKEeaVCtNpv5jAGQ" name="half-power beam with horizontal"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_JgbgAPOKEeaVCtNpv5jAGQ" name="half-power beam with vertical"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_MqSz8POKEeaVCtNpv5jAGQ" name="gain"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ORUcIPOKEeaVCtNpv5jAGQ" name="transmitted power"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_Vb2_FfH8EeaYuI2u_kTC4A" name="CopyOf_uplink frequency max_1">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Vb2_FvH8EeaYuI2u_kTC4A" name="downlink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Vb2_F_H8EeaYuI2u_kTC4A" name="downlink frequeny max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Vb2_GPH8EeaYuI2u_kTC4A" name="uplink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Vb2_GfH8EeaYuI2u_kTC4A" name="uplink frequency max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_Vb2_GvH8EeaYuI2u_kTC4A" name="CopyOf_CopyOf_uplink frequency max_1_1">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Vb2_G_H8EeaYuI2u_kTC4A" name="downlink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Vb2_HPH8EeaYuI2u_kTC4A" name="downlink frequeny max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Vb2_HfH8EeaYuI2u_kTC4A" name="uplink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Vb2_HvH8EeaYuI2u_kTC4A" name="uplink frequency max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_Vb2_H_H8EeaYuI2u_kTC4A" name="CopyOf_uplink frequency max_1">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_Vb2_IPH8EeaYuI2u_kTC4A" name="downlink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_Vb2_IfH8EeaYuI2u_kTC4A" name="downlink frequeny max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_Vb2_IvH8EeaYuI2u_kTC4A" name="uplink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_Vb2_I_H8EeaYuI2u_kTC4A" name="uplink frequency max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          </nestedClassifier>
+        </nestedClassifier>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_UJizwPOKEeaVCtNpv5jAGQ" name="GSM Coverage">
+        <generalization xmi:type="uml:Generalization" xmi:id="_ULmscPOOEeaVCtNpv5jAGQ" general="_OlQToPH8EeaYuI2u_kTC4A"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_UJizwfOKEeaVCtNpv5jAGQ" name="number of TRX"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_UJizxfOKEeaVCtNpv5jAGQ" name="CopyOf_uplink frequency max_1">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_UJizxvOKEeaVCtNpv5jAGQ" name="downlink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_UJizx_OKEeaVCtNpv5jAGQ" name="downlink frequeny max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_UJizyPOKEeaVCtNpv5jAGQ" name="uplink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_UJizyfOKEeaVCtNpv5jAGQ" name="uplink frequency max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+        </nestedClassifier>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_USsIsPOKEeaVCtNpv5jAGQ" name="WCDMA Coverage">
+        <generalization xmi:type="uml:Generalization" xmi:id="_g2dD4PONEeaVCtNpv5jAGQ" general="_OlQToPH8EeaYuI2u_kTC4A"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_USsIsvOKEeaVCtNpv5jAGQ" name="number of DL CE"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_USsIs_OKEeaVCtNpv5jAGQ" name="number of UL CE"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_USsItPOKEeaVCtNpv5jAGQ" name="number of DL RLS"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_7-5_QPOKEeaVCtNpv5jAGQ" name="number of UL RLS"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_8QnaUPOKEeaVCtNpv5jAGQ" name="number of HS codes"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_USsItfOKEeaVCtNpv5jAGQ" name="CopyOf_uplink frequency max_1">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_USsItvOKEeaVCtNpv5jAGQ" name="downlink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_USsIt_OKEeaVCtNpv5jAGQ" name="downlink frequeny max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_USsIuPOKEeaVCtNpv5jAGQ" name="uplink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_USsIufOKEeaVCtNpv5jAGQ" name="uplink frequency max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+        </nestedClassifier>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_UUmNMPOKEeaVCtNpv5jAGQ" name="LTE coverage">
+        <generalization xmi:type="uml:Generalization" xmi:id="_y5r1QPOMEeaVCtNpv5jAGQ" general="_OlQToPH8EeaYuI2u_kTC4A"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_UUmNMfOKEeaVCtNpv5jAGQ" name="number of DL PRB"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_UUmNMvOKEeaVCtNpv5jAGQ" name="number of UL PRB"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_UUmNM_OKEeaVCtNpv5jAGQ" name="number of RRC connected users static"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_UUmNNPOKEeaVCtNpv5jAGQ" name="number of RRC connected users dynamic"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_r0p-MPOKEeaVCtNpv5jAGQ" name="number of VoIP users"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_tAffMPOKEeaVCtNpv5jAGQ" name="number of DRB"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_tTDO0POKEeaVCtNpv5jAGQ" name="number of PUCCH PRB pairs"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_toViUPOKEeaVCtNpv5jAGQ" name="number of SE per TTI"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_0p_AIPOKEeaVCtNpv5jAGQ" name="number of SE per TTI per cell coverage"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_UUmNNfOKEeaVCtNpv5jAGQ" name="CopyOf_uplink frequency max_1">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_UUmNNvOKEeaVCtNpv5jAGQ" name="downlink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_UUmNN_OKEeaVCtNpv5jAGQ" name="downlink frequeny max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_UUmNOPOKEeaVCtNpv5jAGQ" name="uplink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_UUmNOfOKEeaVCtNpv5jAGQ" name="uplink frequency max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+        </nestedClassifier>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_J5-zAPOLEeaVCtNpv5jAGQ" memberEnd="_J6MOYPOLEeaVCtNpv5jAGQ _J6SVAPOLEeaVCtNpv5jAGQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_J6FgsPOLEeaVCtNpv5jAGQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_J6GHwPOLEeaVCtNpv5jAGQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_J6SVAPOLEeaVCtNpv5jAGQ" name="frequency" type="_yGX4MPH7EeaYuI2u_kTC4A" aggregation="composite" association="_J5-zAPOLEeaVCtNpv5jAGQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WxvvoPOLEeaVCtNpv5jAGQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Wy-esPOLEeaVCtNpv5jAGQ" value="*"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_J6MOYPOLEeaVCtNpv5jAGQ" name="rbs cell" type="_ZmtEUPH7EeaYuI2u_kTC4A" association="_J5-zAPOLEeaVCtNpv5jAGQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ag_okPOLEeaVCtNpv5jAGQ" memberEnd="_ag_olvOLEeaVCtNpv5jAGQ _ag_ok_OLEeaVCtNpv5jAGQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ag_okfOLEeaVCtNpv5jAGQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ag_okvOLEeaVCtNpv5jAGQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_ag_ok_OLEeaVCtNpv5jAGQ" name="frequency" type="_yGX4MPH7EeaYuI2u_kTC4A" aggregation="composite" association="_ag_okPOLEeaVCtNpv5jAGQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ag_olPOLEeaVCtNpv5jAGQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ag_olfOLEeaVCtNpv5jAGQ" value="*"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_ag_olvOLEeaVCtNpv5jAGQ" name="rbs cell" type="_ZmtEUPH7EeaYuI2u_kTC4A" association="_ag_okPOLEeaVCtNpv5jAGQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_cdOrwPOLEeaVCtNpv5jAGQ" memberEnd="_cdP54fOLEeaVCtNpv5jAGQ _cdXOoPOLEeaVCtNpv5jAGQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cdPS0POLEeaVCtNpv5jAGQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cdP54POLEeaVCtNpv5jAGQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_cdXOoPOLEeaVCtNpv5jAGQ" name="coverage" type="_OlQToPH8EeaYuI2u_kTC4A" aggregation="composite" association="_cdOrwPOLEeaVCtNpv5jAGQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jmNgoPOLEeaVCtNpv5jAGQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jmgbkPOLEeaVCtNpv5jAGQ" value="*"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_cdP54fOLEeaVCtNpv5jAGQ" name="frequency" type="_yGX4MPH7EeaYuI2u_kTC4A" association="_cdOrwPOLEeaVCtNpv5jAGQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_qa5ggPOLEeaVCtNpv5jAGQ" memberEnd="_qa6uofOLEeaVCtNpv5jAGQ _qa8j0POLEeaVCtNpv5jAGQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qa6HkPOLEeaVCtNpv5jAGQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qa6uoPOLEeaVCtNpv5jAGQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_qa8j0POLEeaVCtNpv5jAGQ" name="coverage" type="_OlQToPH8EeaYuI2u_kTC4A" association="_qa5ggPOLEeaVCtNpv5jAGQ"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_qa6uofOLEeaVCtNpv5jAGQ" name="dl antenna stream" type="_Q6tIEPH8EeaYuI2u_kTC4A" aggregation="composite" association="_qa5ggPOLEeaVCtNpv5jAGQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_u9TUsPOLEeaVCtNpv5jAGQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_u9xOwPOLEeaVCtNpv5jAGQ" value="*"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_9KFjgPOLEeaVCtNpv5jAGQ" memberEnd="_9KGxofOLEeaVCtNpv5jAGQ _9KHYsPOLEeaVCtNpv5jAGQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9KGKkPOLEeaVCtNpv5jAGQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9KGxoPOLEeaVCtNpv5jAGQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_9KHYsPOLEeaVCtNpv5jAGQ" name="coverage" type="_OlQToPH8EeaYuI2u_kTC4A" association="_9KFjgPOLEeaVCtNpv5jAGQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FGmHEPOMEeaVCtNpv5jAGQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FHEoMPOMEeaVCtNpv5jAGQ" value="1"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_9KGxofOLEeaVCtNpv5jAGQ" name="ul antenna stream" type="_QydyEPH8EeaYuI2u_kTC4A" aggregation="composite" association="_9KFjgPOLEeaVCtNpv5jAGQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EA7fgPOMEeaVCtNpv5jAGQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EBKwEPOMEeaVCtNpv5jAGQ" value="*"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_QJudUPOMEeaVCtNpv5jAGQ" memberEnd="_QJvEYvOMEeaVCtNpv5jAGQ _QJvrcPOMEeaVCtNpv5jAGQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QJvEYPOMEeaVCtNpv5jAGQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QJvEYfOMEeaVCtNpv5jAGQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_QJvrcPOMEeaVCtNpv5jAGQ" name="antenna coverage" type="_Vb2_EPH8EeaYuI2u_kTC4A" association="_QJudUPOMEeaVCtNpv5jAGQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XA9a4POMEeaVCtNpv5jAGQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XBOgoPOMEeaVCtNpv5jAGQ" value="*"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_QJvEYvOMEeaVCtNpv5jAGQ" name="dl antenna stream" type="_Q6tIEPH8EeaYuI2u_kTC4A" association="_QJudUPOMEeaVCtNpv5jAGQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oLcJ4POMEeaVCtNpv5jAGQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oMAxoPOMEeaVCtNpv5jAGQ" value="*"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_cBCpkPOMEeaVCtNpv5jAGQ" memberEnd="_cBFs4POMEeaVCtNpv5jAGQ _cBGT8POMEeaVCtNpv5jAGQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cBEewPOMEeaVCtNpv5jAGQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cBFF0POMEeaVCtNpv5jAGQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_cBGT8POMEeaVCtNpv5jAGQ" name="antenna coverage" type="_Vb2_EPH8EeaYuI2u_kTC4A" association="_cBCpkPOMEeaVCtNpv5jAGQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nDjUwPOMEeaVCtNpv5jAGQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nDx-QPOMEeaVCtNpv5jAGQ" value="*"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_cBFs4POMEeaVCtNpv5jAGQ" name="ul antenna stream" type="_QydyEPH8EeaYuI2u_kTC4A" association="_cBCpkPOMEeaVCtNpv5jAGQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_k8eTgPOMEeaVCtNpv5jAGQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_k8lBMPOMEeaVCtNpv5jAGQ" value="*"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_MbHEQPOREeaVCtNpv5jAGQ" name="CoverageTypeEnum">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_QX7fIPOREeaVCtNpv5jAGQ" name="Sector Shaped"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_SAsMsPOREeaVCtNpv5jAGQ" name="PSI-Omni Shaped"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Tds9QPOREeaVCtNpv5jAGQ" name="Dot Shaped"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_kyNK8POREeaVCtNpv5jAGQ" name="PolarizationEnum">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_mvA14POREeaVCtNpv5jAGQ" name="0"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_nadmoPOREeaVCtNpv5jAGQ" name="90"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_oVnnUPOREeaVCtNpv5jAGQ" name="+45"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_pdjfwPOREeaVCtNpv5jAGQ" name="-45"/>
+      </packagedElement>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_hkI09_H7EeaYuI2u_kTC4A">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hkI0-PH7EeaYuI2u_kTC4A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="FunctionTypeConcepts.profile.uml#_79pfVPH7EeaYuI2u_kTC4A"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="FunctionTypeConcepts.profile.uml#_hjf7wPH7EeaYuI2u_kTC4A"/>
+      </profileApplication>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_Jvk-IPH8EeaYuI2u_kTC4A" name="Mhz"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_0vQXIPOJEeaVCtNpv5jAGQ" name="EquipmentTypesModelling"/>
+  </uml:Model>
+  <FunctionTypeConcepts:FunctionType xmi:id="_hkI0-fH7EeaYuI2u_kTC4A" base_Class="_ZmtEUPH7EeaYuI2u_kTC4A"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_79pfZvH7EeaYuI2u_kTC4A" base_Class="_yGX4MPH7EeaYuI2u_kTC4A"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_OCfk__H8EeaYuI2u_kTC4A" base_Class="_OCfk0PH8EeaYuI2u_kTC4A"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_OlQUBvH8EeaYuI2u_kTC4A" base_Class="_OlQToPH8EeaYuI2u_kTC4A"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_OlQUB_H8EeaYuI2u_kTC4A" base_Class="_OlQTpfH8EeaYuI2u_kTC4A"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_QnBXEPH8EeaYuI2u_kTC4A" base_Class="_Qm3mEPH8EeaYuI2u_kTC4A"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_QnBXEfH8EeaYuI2u_kTC4A" base_Class="_Qm3mFfH8EeaYuI2u_kTC4A"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_QynjEPH8EeaYuI2u_kTC4A" base_Class="_QydyEPH8EeaYuI2u_kTC4A"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_QynjEfH8EeaYuI2u_kTC4A" base_Class="_QydyFfH8EeaYuI2u_kTC4A"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_Q625EPH8EeaYuI2u_kTC4A" base_Class="_Q6tIEPH8EeaYuI2u_kTC4A"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_Q625EfH8EeaYuI2u_kTC4A" base_Class="_Q6tIFfH8EeaYuI2u_kTC4A"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_UpSSoPH8EeaYuI2u_kTC4A" base_Class="_UpIhoPH8EeaYuI2u_kTC4A"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_UpSSofH8EeaYuI2u_kTC4A" base_Class="_UpIhpfH8EeaYuI2u_kTC4A"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_VLxViPH8EeaYuI2u_kTC4A" base_Class="_VLwtkPH8EeaYuI2u_kTC4A"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_VLxVifH8EeaYuI2u_kTC4A" base_Class="_VLwtmvH8EeaYuI2u_kTC4A"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_VLxVivH8EeaYuI2u_kTC4A" base_Class="_VLwtn_H8EeaYuI2u_kTC4A"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_VLxVi_H8EeaYuI2u_kTC4A" base_Class="_VLwtlfH8EeaYuI2u_kTC4A"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_Vb3ADPH8EeaYuI2u_kTC4A" base_Class="_Vb2_EPH8EeaYuI2u_kTC4A"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_Vb3ADfH8EeaYuI2u_kTC4A" base_Class="_Vb2_GvH8EeaYuI2u_kTC4A"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_Vb3ADvH8EeaYuI2u_kTC4A" base_Class="_Vb2_H_H8EeaYuI2u_kTC4A"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_Vb3AD_H8EeaYuI2u_kTC4A" base_Class="_Vb2_FfH8EeaYuI2u_kTC4A"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_UJkB4POKEeaVCtNpv5jAGQ" base_Class="_UJizxfOKEeaVCtNpv5jAGQ"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_UJko8POKEeaVCtNpv5jAGQ" base_Class="_UJizwPOKEeaVCtNpv5jAGQ"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_UStW0POKEeaVCtNpv5jAGQ" base_Class="_USsItfOKEeaVCtNpv5jAGQ"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_USuk8POKEeaVCtNpv5jAGQ" base_Class="_USsIsPOKEeaVCtNpv5jAGQ"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_UUnbUPOKEeaVCtNpv5jAGQ" base_Class="_UUmNNfOKEeaVCtNpv5jAGQ"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_UUoCYPOKEeaVCtNpv5jAGQ" base_Class="_UUmNMPOKEeaVCtNpv5jAGQ"/>
+</xmi:XMI>

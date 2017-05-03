@@ -1,0 +1,2125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ActionLanguage="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile" xmlns:FunctionTypeConcepts="http:///schemas/FunctionTypeConcepts/_79pfU_H7EeaYuI2u_kTC4A/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ http:///schemas/FunctionTypeConcepts/_79pfU_H7EeaYuI2u_kTC4A/1 FunctionTypeConcepts.profile.uml#_79pfVPH7EeaYuI2u_kTC4A">
+  <uml:Model xmi:id="_gMrIMPH6EeaYuI2u_kTC4A" name="RBSConfigurationReferenceModel">
+    <packagedElement xmi:type="uml:Package" xmi:id="_LY46wPH7EeaYuI2u_kTC4A" name="FunctionTypesModelling">
+      <ownedComment xmi:type="uml:Comment" xmi:id="__g1nAB9SEeeDjMvrp8ZYgw">
+        <body>We could allocate several carrier(coverage DM) to same sector, we assume this CoverageGroup will be mapped to physical sector which will have relation with RBB, it is like SectorEquipmentFunction in MOM</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_kAb28B9bEeeDjMvrp8ZYgw">
+        <body>AntennaCoverage will belong to Coverage Group, antenna power attribte need be moved to antenna stream instead, it is like RfBranch in MOM</body>
+      </ownedComment>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ZmtEUPH7EeaYuI2u_kTC4A" name="RBS Cell">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_mmacAPH7EeaYuI2u_kTC4A" name="RAT Type" type="_vvoqUPH7EeaYuI2u_kTC4A"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_vvoqUPH7EeaYuI2u_kTC4A" name="RatTypeEnum"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_yGX4MPH7EeaYuI2u_kTC4A" name="Frequency">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_3x0_IPH7EeaYuI2u_kTC4A" name="downlink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_4dEUgPH7EeaYuI2u_kTC4A" name="downlink frequeny max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_AbMosPH8EeaYuI2u_kTC4A" name="uplink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_A0_BsPH8EeaYuI2u_kTC4A" name="uplink frequency max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_OCfk0PH8EeaYuI2u_kTC4A" name="CopyOf_uplink frequency max_1">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_OCfk0fH8EeaYuI2u_kTC4A" name="downlink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_OCfk0vH8EeaYuI2u_kTC4A" name="downlink frequeny max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_OCfk0_H8EeaYuI2u_kTC4A" name="uplink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_OCfk1PH8EeaYuI2u_kTC4A" name="uplink frequency max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+        </nestedClassifier>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_OlQToPH8EeaYuI2u_kTC4A" name="Coverage">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_OlQTofH8EeaYuI2u_kTC4A" name="type of coverage" type="_MbHEQPOREeaVCtNpv5jAGQ"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_OlQTpfH8EeaYuI2u_kTC4A" name="CopyOf_uplink frequency max_1">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_OlQTpvH8EeaYuI2u_kTC4A" name="downlink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_OlQTp_H8EeaYuI2u_kTC4A" name="downlink frequeny max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_OlQTqPH8EeaYuI2u_kTC4A" name="uplink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_OlQTqfH8EeaYuI2u_kTC4A" name="uplink frequency max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_Qm3mEPH8EeaYuI2u_kTC4A" name="CopyOf_CopyOf_uplink frequency max_1_1">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Qm3mEfH8EeaYuI2u_kTC4A" name="downlink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Qm3mEvH8EeaYuI2u_kTC4A" name="downlink frequeny max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Qm3mE_H8EeaYuI2u_kTC4A" name="uplink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Qm3mFPH8EeaYuI2u_kTC4A" name="uplink frequency max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_Qm3mFfH8EeaYuI2u_kTC4A" name="CopyOf_uplink frequency max_1">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_Qm3mFvH8EeaYuI2u_kTC4A" name="downlink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_Qm3mF_H8EeaYuI2u_kTC4A" name="downlink frequeny max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_Qm3mGPH8EeaYuI2u_kTC4A" name="uplink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_Qm3mGfH8EeaYuI2u_kTC4A" name="uplink frequency max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          </nestedClassifier>
+        </nestedClassifier>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_QydyEPH8EeaYuI2u_kTC4A" name="UL Antenna Stream">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_QydyEfH8EeaYuI2u_kTC4A" name="antenna relative position"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_QydyEvH8EeaYuI2u_kTC4A" name="antenna polarization" type="_kyNK8POREeaVCtNpv5jAGQ"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_QydyFfH8EeaYuI2u_kTC4A" name="CopyOf_uplink frequency max_1">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_QydyFvH8EeaYuI2u_kTC4A" name="downlink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_QydyF_H8EeaYuI2u_kTC4A" name="downlink frequeny max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_QydyGPH8EeaYuI2u_kTC4A" name="uplink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_QydyGfH8EeaYuI2u_kTC4A" name="uplink frequency max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_UpIhoPH8EeaYuI2u_kTC4A" name="CopyOf_CopyOf_uplink frequency max_1_1">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_UpIhofH8EeaYuI2u_kTC4A" name="downlink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_UpIhovH8EeaYuI2u_kTC4A" name="downlink frequeny max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_UpIho_H8EeaYuI2u_kTC4A" name="uplink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_UpIhpPH8EeaYuI2u_kTC4A" name="uplink frequency max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_UpIhpfH8EeaYuI2u_kTC4A" name="CopyOf_uplink frequency max_1">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_UpIhpvH8EeaYuI2u_kTC4A" name="downlink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_UpIhp_H8EeaYuI2u_kTC4A" name="downlink frequeny max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_UpIhqPH8EeaYuI2u_kTC4A" name="uplink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_UpIhqfH8EeaYuI2u_kTC4A" name="uplink frequency max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          </nestedClassifier>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_VLwtkPH8EeaYuI2u_kTC4A" name="CopyOf_CopyOf_CopyOf_uplink frequency max_1_1_1">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_VLwtkfH8EeaYuI2u_kTC4A" name="downlink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_VLwtkvH8EeaYuI2u_kTC4A" name="downlink frequeny max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_VLwtk_H8EeaYuI2u_kTC4A" name="uplink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_VLwtlPH8EeaYuI2u_kTC4A" name="uplink frequency max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_VLwtlfH8EeaYuI2u_kTC4A" name="CopyOf_uplink frequency max_1">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_VLwtlvH8EeaYuI2u_kTC4A" name="downlink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_VLwtl_H8EeaYuI2u_kTC4A" name="downlink frequeny max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_VLwtmPH8EeaYuI2u_kTC4A" name="uplink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_VLwtmfH8EeaYuI2u_kTC4A" name="uplink frequency max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_VLwtmvH8EeaYuI2u_kTC4A" name="CopyOf_CopyOf_uplink frequency max_1_1">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_VLwtm_H8EeaYuI2u_kTC4A" name="downlink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_VLwtnPH8EeaYuI2u_kTC4A" name="downlink frequeny max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_VLwtnfH8EeaYuI2u_kTC4A" name="uplink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_VLwtnvH8EeaYuI2u_kTC4A" name="uplink frequency max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_VLwtn_H8EeaYuI2u_kTC4A" name="CopyOf_uplink frequency max_1">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_VLwtoPH8EeaYuI2u_kTC4A" name="downlink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_VLwtofH8EeaYuI2u_kTC4A" name="downlink frequeny max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_VLwtovH8EeaYuI2u_kTC4A" name="uplink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_VLwto_H8EeaYuI2u_kTC4A" name="uplink frequency max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+            </nestedClassifier>
+          </nestedClassifier>
+        </nestedClassifier>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Q6tIEPH8EeaYuI2u_kTC4A" name="DL Antenna Stream">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Q6tIEfH8EeaYuI2u_kTC4A" name="antenna relative position"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Q6tIE_H8EeaYuI2u_kTC4A" name="antenna polarization" type="_kyNK8POREeaVCtNpv5jAGQ"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_Q6tIFfH8EeaYuI2u_kTC4A" name="CopyOf_uplink frequency max_1">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Q6tIFvH8EeaYuI2u_kTC4A" name="downlink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Q6tIF_H8EeaYuI2u_kTC4A" name="downlink frequeny max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Q6tIGPH8EeaYuI2u_kTC4A" name="uplink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Q6tIGfH8EeaYuI2u_kTC4A" name="uplink frequency max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+        </nestedClassifier>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Vb2_EPH8EeaYuI2u_kTC4A" name="Antenna Coverage">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Vb2_EvH8EeaYuI2u_kTC4A" name="longitude"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Vb2_E_H8EeaYuI2u_kTC4A" name="height"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Vb2_FPH8EeaYuI2u_kTC4A" name="beam direction horizontal"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_CcT9APOKEeaVCtNpv5jAGQ" name="beam direction vertical"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_GDgtMPOKEeaVCtNpv5jAGQ" name="half-power beam with horizontal"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_JgbgAPOKEeaVCtNpv5jAGQ" name="half-power beam with vertical"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_MqSz8POKEeaVCtNpv5jAGQ" name="gain"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ORUcIPOKEeaVCtNpv5jAGQ" name="transmitted power"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_Vb2_FfH8EeaYuI2u_kTC4A" name="CopyOf_uplink frequency max_1">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Vb2_FvH8EeaYuI2u_kTC4A" name="downlink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Vb2_F_H8EeaYuI2u_kTC4A" name="downlink frequeny max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Vb2_GPH8EeaYuI2u_kTC4A" name="uplink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Vb2_GfH8EeaYuI2u_kTC4A" name="uplink frequency max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_Vb2_GvH8EeaYuI2u_kTC4A" name="CopyOf_CopyOf_uplink frequency max_1_1">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Vb2_G_H8EeaYuI2u_kTC4A" name="downlink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Vb2_HPH8EeaYuI2u_kTC4A" name="downlink frequeny max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Vb2_HfH8EeaYuI2u_kTC4A" name="uplink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Vb2_HvH8EeaYuI2u_kTC4A" name="uplink frequency max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_Vb2_H_H8EeaYuI2u_kTC4A" name="CopyOf_uplink frequency max_1">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_Vb2_IPH8EeaYuI2u_kTC4A" name="downlink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_Vb2_IfH8EeaYuI2u_kTC4A" name="downlink frequeny max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_Vb2_IvH8EeaYuI2u_kTC4A" name="uplink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_Vb2_I_H8EeaYuI2u_kTC4A" name="uplink frequency max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          </nestedClassifier>
+        </nestedClassifier>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_UJizwPOKEeaVCtNpv5jAGQ" name="GSM Coverage">
+        <generalization xmi:type="uml:Generalization" xmi:id="_ULmscPOOEeaVCtNpv5jAGQ" general="_OlQToPH8EeaYuI2u_kTC4A"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_UJizwfOKEeaVCtNpv5jAGQ" name="number of TRX"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_UJizxfOKEeaVCtNpv5jAGQ" name="CopyOf_uplink frequency max_1">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_UJizxvOKEeaVCtNpv5jAGQ" name="downlink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_UJizx_OKEeaVCtNpv5jAGQ" name="downlink frequeny max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_UJizyPOKEeaVCtNpv5jAGQ" name="uplink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_UJizyfOKEeaVCtNpv5jAGQ" name="uplink frequency max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+        </nestedClassifier>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_USsIsPOKEeaVCtNpv5jAGQ" name="WCDMA Coverage">
+        <generalization xmi:type="uml:Generalization" xmi:id="_g2dD4PONEeaVCtNpv5jAGQ" general="_OlQToPH8EeaYuI2u_kTC4A"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_USsIsvOKEeaVCtNpv5jAGQ" name="number of DL CE"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_USsIs_OKEeaVCtNpv5jAGQ" name="number of UL CE"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_USsItPOKEeaVCtNpv5jAGQ" name="number of DL RLS"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_7-5_QPOKEeaVCtNpv5jAGQ" name="number of UL RLS"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_8QnaUPOKEeaVCtNpv5jAGQ" name="number of HS codes"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_USsItfOKEeaVCtNpv5jAGQ" name="CopyOf_uplink frequency max_1">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_USsItvOKEeaVCtNpv5jAGQ" name="downlink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_USsIt_OKEeaVCtNpv5jAGQ" name="downlink frequeny max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_USsIuPOKEeaVCtNpv5jAGQ" name="uplink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_USsIufOKEeaVCtNpv5jAGQ" name="uplink frequency max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+        </nestedClassifier>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_UUmNMPOKEeaVCtNpv5jAGQ" name="LTE coverage">
+        <generalization xmi:type="uml:Generalization" xmi:id="_y5r1QPOMEeaVCtNpv5jAGQ" general="_OlQToPH8EeaYuI2u_kTC4A"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_UUmNMfOKEeaVCtNpv5jAGQ" name="number of DL PRB"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_UUmNMvOKEeaVCtNpv5jAGQ" name="number of UL PRB"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_UUmNM_OKEeaVCtNpv5jAGQ" name="number of RRC connected users static"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_UUmNNPOKEeaVCtNpv5jAGQ" name="number of RRC connected users dynamic"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_r0p-MPOKEeaVCtNpv5jAGQ" name="number of VoIP users"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_tAffMPOKEeaVCtNpv5jAGQ" name="number of DRB"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_tTDO0POKEeaVCtNpv5jAGQ" name="number of PUCCH PRB pairs"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_toViUPOKEeaVCtNpv5jAGQ" name="number of SE per TTI"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_0p_AIPOKEeaVCtNpv5jAGQ" name="number of SE per TTI per cell coverage"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_UUmNNfOKEeaVCtNpv5jAGQ" name="CopyOf_uplink frequency max_1">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_UUmNNvOKEeaVCtNpv5jAGQ" name="downlink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_UUmNN_OKEeaVCtNpv5jAGQ" name="downlink frequeny max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_UUmNOPOKEeaVCtNpv5jAGQ" name="uplink frequency min" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_UUmNOfOKEeaVCtNpv5jAGQ" name="uplink frequency max" type="_Jvk-IPH8EeaYuI2u_kTC4A"/>
+        </nestedClassifier>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_J5-zAPOLEeaVCtNpv5jAGQ" memberEnd="_J6MOYPOLEeaVCtNpv5jAGQ _J6SVAPOLEeaVCtNpv5jAGQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_J6FgsPOLEeaVCtNpv5jAGQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_J6GHwPOLEeaVCtNpv5jAGQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_J6SVAPOLEeaVCtNpv5jAGQ" name="frequency" type="_yGX4MPH7EeaYuI2u_kTC4A" aggregation="composite" association="_J5-zAPOLEeaVCtNpv5jAGQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WxvvoPOLEeaVCtNpv5jAGQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Wy-esPOLEeaVCtNpv5jAGQ" value="*"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_J6MOYPOLEeaVCtNpv5jAGQ" name="rbs cell" type="_ZmtEUPH7EeaYuI2u_kTC4A" association="_J5-zAPOLEeaVCtNpv5jAGQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ag_okPOLEeaVCtNpv5jAGQ" memberEnd="_ag_olvOLEeaVCtNpv5jAGQ _ag_ok_OLEeaVCtNpv5jAGQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ag_okfOLEeaVCtNpv5jAGQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ag_okvOLEeaVCtNpv5jAGQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_ag_ok_OLEeaVCtNpv5jAGQ" name="frequency" type="_yGX4MPH7EeaYuI2u_kTC4A" aggregation="composite" association="_ag_okPOLEeaVCtNpv5jAGQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ag_olPOLEeaVCtNpv5jAGQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ag_olfOLEeaVCtNpv5jAGQ" value="*"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_ag_olvOLEeaVCtNpv5jAGQ" name="rbs cell" type="_ZmtEUPH7EeaYuI2u_kTC4A" association="_ag_okPOLEeaVCtNpv5jAGQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_cdOrwPOLEeaVCtNpv5jAGQ" memberEnd="_cdP54fOLEeaVCtNpv5jAGQ _cdXOoPOLEeaVCtNpv5jAGQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cdPS0POLEeaVCtNpv5jAGQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cdP54POLEeaVCtNpv5jAGQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_cdXOoPOLEeaVCtNpv5jAGQ" name="coverage" type="_OlQToPH8EeaYuI2u_kTC4A" aggregation="composite" association="_cdOrwPOLEeaVCtNpv5jAGQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jmNgoPOLEeaVCtNpv5jAGQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jmgbkPOLEeaVCtNpv5jAGQ" value="*"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_cdP54fOLEeaVCtNpv5jAGQ" name="frequency" type="_yGX4MPH7EeaYuI2u_kTC4A" association="_cdOrwPOLEeaVCtNpv5jAGQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_qa5ggPOLEeaVCtNpv5jAGQ" memberEnd="_qa6uofOLEeaVCtNpv5jAGQ _qa8j0POLEeaVCtNpv5jAGQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qa6HkPOLEeaVCtNpv5jAGQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qa6uoPOLEeaVCtNpv5jAGQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_qa8j0POLEeaVCtNpv5jAGQ" name="coverage" type="_OlQToPH8EeaYuI2u_kTC4A" association="_qa5ggPOLEeaVCtNpv5jAGQ"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_qa6uofOLEeaVCtNpv5jAGQ" name="dl antenna stream" type="_Q6tIEPH8EeaYuI2u_kTC4A" aggregation="composite" association="_qa5ggPOLEeaVCtNpv5jAGQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_u9TUsPOLEeaVCtNpv5jAGQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_u9xOwPOLEeaVCtNpv5jAGQ" value="*"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_9KFjgPOLEeaVCtNpv5jAGQ" memberEnd="_9KGxofOLEeaVCtNpv5jAGQ _9KHYsPOLEeaVCtNpv5jAGQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9KGKkPOLEeaVCtNpv5jAGQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9KGxoPOLEeaVCtNpv5jAGQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_9KHYsPOLEeaVCtNpv5jAGQ" name="coverage" type="_OlQToPH8EeaYuI2u_kTC4A" association="_9KFjgPOLEeaVCtNpv5jAGQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FGmHEPOMEeaVCtNpv5jAGQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FHEoMPOMEeaVCtNpv5jAGQ" value="1"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_9KGxofOLEeaVCtNpv5jAGQ" name="ul antenna stream" type="_QydyEPH8EeaYuI2u_kTC4A" aggregation="composite" association="_9KFjgPOLEeaVCtNpv5jAGQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EA7fgPOMEeaVCtNpv5jAGQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EBKwEPOMEeaVCtNpv5jAGQ" value="*"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_QJudUPOMEeaVCtNpv5jAGQ" memberEnd="_QJvEYvOMEeaVCtNpv5jAGQ _QJvrcPOMEeaVCtNpv5jAGQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QJvEYPOMEeaVCtNpv5jAGQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QJvEYfOMEeaVCtNpv5jAGQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_QJvrcPOMEeaVCtNpv5jAGQ" name="antenna coverage" type="_Vb2_EPH8EeaYuI2u_kTC4A" association="_QJudUPOMEeaVCtNpv5jAGQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XA9a4POMEeaVCtNpv5jAGQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XBOgoPOMEeaVCtNpv5jAGQ" value="*"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_QJvEYvOMEeaVCtNpv5jAGQ" name="dl antenna stream" type="_Q6tIEPH8EeaYuI2u_kTC4A" association="_QJudUPOMEeaVCtNpv5jAGQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oLcJ4POMEeaVCtNpv5jAGQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oMAxoPOMEeaVCtNpv5jAGQ" value="*"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_cBCpkPOMEeaVCtNpv5jAGQ" memberEnd="_cBFs4POMEeaVCtNpv5jAGQ _cBGT8POMEeaVCtNpv5jAGQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cBEewPOMEeaVCtNpv5jAGQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cBFF0POMEeaVCtNpv5jAGQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_cBGT8POMEeaVCtNpv5jAGQ" name="antenna coverage" type="_Vb2_EPH8EeaYuI2u_kTC4A" association="_cBCpkPOMEeaVCtNpv5jAGQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nDjUwPOMEeaVCtNpv5jAGQ" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nDx-QPOMEeaVCtNpv5jAGQ" value="*"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_cBFs4POMEeaVCtNpv5jAGQ" name="ul antenna stream" type="_QydyEPH8EeaYuI2u_kTC4A" association="_cBCpkPOMEeaVCtNpv5jAGQ">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_k8eTgPOMEeaVCtNpv5jAGQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_k8lBMPOMEeaVCtNpv5jAGQ" value="*"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_MbHEQPOREeaVCtNpv5jAGQ" name="CoverageTypeEnum">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_QX7fIPOREeaVCtNpv5jAGQ" name="Sector Shaped"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_SAsMsPOREeaVCtNpv5jAGQ" name="PSI-Omni Shaped"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Tds9QPOREeaVCtNpv5jAGQ" name="Dot Shaped"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_kyNK8POREeaVCtNpv5jAGQ" name="PolarizationEnum">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_mvA14POREeaVCtNpv5jAGQ" name="0"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_nadmoPOREeaVCtNpv5jAGQ" name="90"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_oVnnUPOREeaVCtNpv5jAGQ" name="+45"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_pdjfwPOREeaVCtNpv5jAGQ" name="-45"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_VsMg0B9REeeDjMvrp8ZYgw" name="Frequency">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_6pnrUB9QEeeDjMvrp8ZYgw" name="RbsCell"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_X8o5cB9REeeDjMvrp8ZYgw" name="Coverage"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_sQ9uQB9REeeDjMvrp8ZYgw" name="DL Antenna stream"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ulNo0B9REeeDjMvrp8ZYgw" name="UL Antenna stream"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_wNXSYB9REeeDjMvrp8ZYgw" name="AntennaCoverage"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_a_9rEB9SEeeDjMvrp8ZYgw" memberEnd="_bADKoB9SEeeDjMvrp8ZYgw _bAG1AB9SEeeDjMvrp8ZYgw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bABVcB9SEeeDjMvrp8ZYgw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_bAB8gB9SEeeDjMvrp8ZYgw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_bAG1AB9SEeeDjMvrp8ZYgw" name="frequency" type="_VsMg0B9REeeDjMvrp8ZYgw" aggregation="composite" association="_a_9rEB9SEeeDjMvrp8ZYgw"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_bADKoB9SEeeDjMvrp8ZYgw" name="rbscell" type="_6pnrUB9QEeeDjMvrp8ZYgw" association="_a_9rEB9SEeeDjMvrp8ZYgw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_vp0D8B9SEeeDjMvrp8ZYgw" memberEnd="_vp1SER9SEeeDjMvrp8ZYgw _vp15IB9SEeeDjMvrp8ZYgw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vp0rAB9SEeeDjMvrp8ZYgw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vp1SEB9SEeeDjMvrp8ZYgw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_vp1SER9SEeeDjMvrp8ZYgw" name="frequency" type="_VsMg0B9REeeDjMvrp8ZYgw" association="_vp0D8B9SEeeDjMvrp8ZYgw"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_vp15IB9SEeeDjMvrp8ZYgw" name="coverage" type="_X8o5cB9REeeDjMvrp8ZYgw" aggregation="composite" association="_vp0D8B9SEeeDjMvrp8ZYgw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2OR2gB9SEeeDjMvrp8ZYgw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2Of48B9SEeeDjMvrp8ZYgw" value="*"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_5no_AB9SEeeDjMvrp8ZYgw" name="CoverageGroup">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_IpBZ4B9bEeeDjMvrp8ZYgw" name="CoverageGroup"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_lp96MB9TEeeDjMvrp8ZYgw" memberEnd="_lp_vYB9TEeeDjMvrp8ZYgw _lp_vYR9TEeeDjMvrp8ZYgw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lp-hQB9TEeeDjMvrp8ZYgw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lp_IUB9TEeeDjMvrp8ZYgw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_lp_vYR9TEeeDjMvrp8ZYgw" name="dl antenna stream" type="_sQ9uQB9REeeDjMvrp8ZYgw" aggregation="composite" association="_lp96MB9TEeeDjMvrp8ZYgw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nu5mYB9TEeeDjMvrp8ZYgw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nu8CoB9TEeeDjMvrp8ZYgw" value="*"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_lp_vYB9TEeeDjMvrp8ZYgw" name="coverage" type="_X8o5cB9REeeDjMvrp8ZYgw" association="_lp96MB9TEeeDjMvrp8ZYgw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_s17KkB9TEeeDjMvrp8ZYgw" memberEnd="_s19m0B9TEeeDjMvrp8ZYgw _s1-N4B9TEeeDjMvrp8ZYgw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_s18YsB9TEeeDjMvrp8ZYgw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_s18_wB9TEeeDjMvrp8ZYgw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_s1-N4B9TEeeDjMvrp8ZYgw" name="ul antenna stream" type="_ulNo0B9REeeDjMvrp8ZYgw" aggregation="composite" association="_s17KkB9TEeeDjMvrp8ZYgw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ux4g8B9TEeeDjMvrp8ZYgw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ux69MB9TEeeDjMvrp8ZYgw" value="*"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_s19m0B9TEeeDjMvrp8ZYgw" name="coverage" type="_X8o5cB9REeeDjMvrp8ZYgw" association="_s17KkB9TEeeDjMvrp8ZYgw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_8gXDIB9TEeeDjMvrp8ZYgw" memberEnd="_8gatgB9TEeeDjMvrp8ZYgw _8gb7oB9TEeeDjMvrp8ZYgw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8gZfYB9TEeeDjMvrp8ZYgw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8gaGcB9TEeeDjMvrp8ZYgw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_8gb7oB9TEeeDjMvrp8ZYgw" name="antennacoverage" type="_wNXSYB9REeeDjMvrp8ZYgw" aggregation="composite" association="_8gXDIB9TEeeDjMvrp8ZYgw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-4vPwB9TEeeDjMvrp8ZYgw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-4xE8B9TEeeDjMvrp8ZYgw" value="*"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_8gatgB9TEeeDjMvrp8ZYgw" name="coverage" type="_5no_AB9SEeeDjMvrp8ZYgw" association="_8gXDIB9TEeeDjMvrp8ZYgw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Qq3NkB9UEeeDjMvrp8ZYgw" memberEnd="_Qq5p0B9UEeeDjMvrp8ZYgw _Qq6Q4B9UEeeDjMvrp8ZYgw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Qq4bsB9UEeeDjMvrp8ZYgw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Qq5CwB9UEeeDjMvrp8ZYgw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_Qq6Q4B9UEeeDjMvrp8ZYgw" name="coverage" type="_X8o5cB9REeeDjMvrp8ZYgw" aggregation="composite" association="_Qq3NkB9UEeeDjMvrp8ZYgw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SpCxgB9UEeeDjMvrp8ZYgw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SpFNwB9UEeeDjMvrp8ZYgw" value="*"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_Qq5p0B9UEeeDjMvrp8ZYgw" name="coveragegroup" type="_5no_AB9SEeeDjMvrp8ZYgw" association="_Qq3NkB9UEeeDjMvrp8ZYgw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_MvzzoB9cEeeDjMvrp8ZYgw" memberEnd="_Mv2P4R9cEeeDjMvrp8ZYgw _Mv228B9cEeeDjMvrp8ZYgw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Mv1o0B9cEeeDjMvrp8ZYgw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Mv2P4B9cEeeDjMvrp8ZYgw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_Mv228B9cEeeDjMvrp8ZYgw" name="dl antenna stream" type="_sQ9uQB9REeeDjMvrp8ZYgw" association="_MvzzoB9cEeeDjMvrp8ZYgw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yWQrAB9xEeeDjMvrp8ZYgw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yXTz4B9xEeeDjMvrp8ZYgw" value="*"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_Mv2P4R9cEeeDjMvrp8ZYgw" name="antennacoverage" type="_wNXSYB9REeeDjMvrp8ZYgw" association="_MvzzoB9cEeeDjMvrp8ZYgw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Syd5oB9cEeeDjMvrp8ZYgw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SyrVAB9cEeeDjMvrp8ZYgw" value="*"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_YSjeEB9cEeeDjMvrp8ZYgw" memberEnd="_YSl6UR9cEeeDjMvrp8ZYgw _YSmhYB9cEeeDjMvrp8ZYgw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YSkFIB9cEeeDjMvrp8ZYgw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_YSl6UB9cEeeDjMvrp8ZYgw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_YSmhYB9cEeeDjMvrp8ZYgw" name="ul antenna stream" type="_ulNo0B9REeeDjMvrp8ZYgw" association="_YSjeEB9cEeeDjMvrp8ZYgw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hBC4MB9cEeeDjMvrp8ZYgw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hBIXwB9cEeeDjMvrp8ZYgw" value="1"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_YSl6UR9cEeeDjMvrp8ZYgw" name="antennacoverage" type="_wNXSYB9REeeDjMvrp8ZYgw" association="_YSjeEB9cEeeDjMvrp8ZYgw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gk_1YB9cEeeDjMvrp8ZYgw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_glFU8B9cEeeDjMvrp8ZYgw" value="*"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_9oQ60B9dEeeDjMvrp8ZYgw" name="RBBType">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_uan2gB9eEeeDjMvrp8ZYgw" name="RBB name"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_OYgk4B9eEeeDjMvrp8ZYgw" name="RBBRfPort">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_a7jOsB9eEeeDjMvrp8ZYgw" name="TX capable">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_iRwnQB9eEeeDjMvrp8ZYgw">
+            <body></body>
+          </ownedComment>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_qNwNcB9eEeeDjMvrp8ZYgw" name="RX capable"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_VYHbUB9eEeeDjMvrp8ZYgw" name="RfPort"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_XAS6EB9eEeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_XAS6ER9eEeeDjMvrp8ZYgw" name="RfPort"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_zFYVcB9eEeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_zFYVcR9eEeeDjMvrp8ZYgw" name="TX capable">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_zFYVch9eEeeDjMvrp8ZYgw">
+              <body></body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_zFYVcx9eEeeDjMvrp8ZYgw" name="RX capable"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_zFYVdB9eEeeDjMvrp8ZYgw" name="RfPort"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_zFYVdR9eEeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_zFYVdh9eEeeDjMvrp8ZYgw" name="RfPort"/>
+          </nestedClassifier>
+        </nestedClassifier>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_1KN7AB9eEeeDjMvrp8ZYgw" name="RBBDataPort">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_1KN7BB9eEeeDjMvrp8ZYgw" name="RfPort"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_1KN7BR9eEeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_1KN7Bh9eEeeDjMvrp8ZYgw" name="RfPort"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_1KN7Bx9eEeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_1KN7CB9eEeeDjMvrp8ZYgw" name="TX capable">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_1KN7CR9eEeeDjMvrp8ZYgw">
+              <body></body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_1KN7Ch9eEeeDjMvrp8ZYgw" name="RX capable"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_1KN7Cx9eEeeDjMvrp8ZYgw" name="RfPort"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_1KN7DB9eEeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_1KN7DR9eEeeDjMvrp8ZYgw" name="RfPort"/>
+          </nestedClassifier>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_4j-2sB9fEeeDjMvrp8ZYgw" name="DataPort">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_4j-2sR9fEeeDjMvrp8ZYgw" name="RfPort"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_4j-2sh9fEeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_4j-2sx9fEeeDjMvrp8ZYgw" name="RfPort"/>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_4j-2tB9fEeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_4j-2tR9fEeeDjMvrp8ZYgw" name="TX capable">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_4j-2th9fEeeDjMvrp8ZYgw">
+                <body></body>
+              </ownedComment>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_4j-2tx9fEeeDjMvrp8ZYgw" name="RX capable"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_4j-2uB9fEeeDjMvrp8ZYgw" name="RfPort"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_4j-2uR9fEeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_4j-2uh9fEeeDjMvrp8ZYgw" name="RfPort"/>
+            </nestedClassifier>
+          </nestedClassifier>
+        </nestedClassifier>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_L3ingB9fEeeDjMvrp8ZYgw" memberEnd="_L3kcsR9fEeeDjMvrp8ZYgw _L3kcsh9fEeeDjMvrp8ZYgw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_L3j1oB9fEeeDjMvrp8ZYgw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_L3kcsB9fEeeDjMvrp8ZYgw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_L3kcsh9fEeeDjMvrp8ZYgw" name="rbbtype" type="_9oQ60B9dEeeDjMvrp8ZYgw" association="_L3ingB9fEeeDjMvrp8ZYgw"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_L3kcsR9fEeeDjMvrp8ZYgw" name="rfport" type="_OYgk4B9eEeeDjMvrp8ZYgw" aggregation="composite" association="_L3ingB9fEeeDjMvrp8ZYgw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RrJk4B9fEeeDjMvrp8ZYgw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RrLaEB9fEeeDjMvrp8ZYgw" value="*"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_iV7gIB9fEeeDjMvrp8ZYgw" memberEnd="_iV98YB9fEeeDjMvrp8ZYgw _iV-jcB9fEeeDjMvrp8ZYgw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iV8uQB9fEeeDjMvrp8ZYgw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_iV9VUB9fEeeDjMvrp8ZYgw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_iV-jcB9fEeeDjMvrp8ZYgw" name="dataport" type="_1KN7AB9eEeeDjMvrp8ZYgw" aggregation="composite" association="_iV7gIB9fEeeDjMvrp8ZYgw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_masWEB9fEeeDjMvrp8ZYgw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mbDicB9fEeeDjMvrp8ZYgw" value="*"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_iV98YB9fEeeDjMvrp8ZYgw" name="rbbtype" type="_9oQ60B9dEeeDjMvrp8ZYgw" association="_iV7gIB9fEeeDjMvrp8ZYgw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kuWJAB9fEeeDjMvrp8ZYgw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kuiWQB9fEeeDjMvrp8ZYgw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_6N9sQB9fEeeDjMvrp8ZYgw" name="RBBRU">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_6N9sQR9fEeeDjMvrp8ZYgw" name="RfPort"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_6N9sQh9fEeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_6N9sQx9fEeeDjMvrp8ZYgw" name="RfPort"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_6N9sRB9fEeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_6N9sRR9fEeeDjMvrp8ZYgw" name="TX capable">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_6N9sRh9fEeeDjMvrp8ZYgw">
+              <body></body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_6N9sRx9fEeeDjMvrp8ZYgw" name="RX capable"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_6N9sSB9fEeeDjMvrp8ZYgw" name="RfPort"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_6N9sSR9fEeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_6N9sSh9fEeeDjMvrp8ZYgw" name="RfPort"/>
+          </nestedClassifier>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_6N9sSx9fEeeDjMvrp8ZYgw" name="DataPort">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_6N9sTB9fEeeDjMvrp8ZYgw" name="RfPort"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_6N9sTR9fEeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_6N9sTh9fEeeDjMvrp8ZYgw" name="RfPort"/>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_6N9sTx9fEeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_6N9sUB9fEeeDjMvrp8ZYgw" name="TX capable">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_6N9sUR9fEeeDjMvrp8ZYgw">
+                <body></body>
+              </ownedComment>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_6N9sUh9fEeeDjMvrp8ZYgw" name="RX capable"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_6N9sUx9fEeeDjMvrp8ZYgw" name="RfPort"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_6N9sVB9fEeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_6N9sVR9fEeeDjMvrp8ZYgw" name="RfPort"/>
+            </nestedClassifier>
+          </nestedClassifier>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_UeWP0B9gEeeDjMvrp8ZYgw" name="FRE">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_UeWP0R9gEeeDjMvrp8ZYgw" name="RfPort"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_UeWP0h9gEeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_UeWP0x9gEeeDjMvrp8ZYgw" name="RfPort"/>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_UeWP1B9gEeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_UeWP1R9gEeeDjMvrp8ZYgw" name="TX capable">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_UeWP1h9gEeeDjMvrp8ZYgw">
+                <body></body>
+              </ownedComment>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_UeWP1x9gEeeDjMvrp8ZYgw" name="RX capable"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_UeWP2B9gEeeDjMvrp8ZYgw" name="RfPort"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_UeWP2R9gEeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_UeWP2h9gEeeDjMvrp8ZYgw" name="RfPort"/>
+            </nestedClassifier>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_UeWP2x9gEeeDjMvrp8ZYgw" name="DataPort">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_UeWP3B9gEeeDjMvrp8ZYgw" name="RfPort"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_UeWP3R9gEeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_UeWP3h9gEeeDjMvrp8ZYgw" name="RfPort"/>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_UeWP3x9gEeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_UeWP4B9gEeeDjMvrp8ZYgw" name="TX capable">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_UeWP4R9gEeeDjMvrp8ZYgw">
+                  <body></body>
+                </ownedComment>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_UeWP4h9gEeeDjMvrp8ZYgw" name="RX capable"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_UeWP4x9gEeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_UeWP5B9gEeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_UeWP5R9gEeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+            </nestedClassifier>
+          </nestedClassifier>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_zNH6MB90EeeDjMvrp8ZYgw" name="RBBRU">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_zNH6MR90EeeDjMvrp8ZYgw" name="RfPort"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_zNH6Mh90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_zNH6Mx90EeeDjMvrp8ZYgw" name="RfPort"/>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_zNH6NB90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_zNIhQB90EeeDjMvrp8ZYgw" name="TX capable">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_zNIhQR90EeeDjMvrp8ZYgw">
+                <body></body>
+              </ownedComment>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_zNIhQh90EeeDjMvrp8ZYgw" name="RX capable"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_zNIhQx90EeeDjMvrp8ZYgw" name="RfPort"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_zNIhRB90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_zNIhRR90EeeDjMvrp8ZYgw" name="RfPort"/>
+            </nestedClassifier>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_zNIhRh90EeeDjMvrp8ZYgw" name="DataPort">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_zNIhRx90EeeDjMvrp8ZYgw" name="RfPort"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_zNIhSB90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_zNIhSR90EeeDjMvrp8ZYgw" name="RfPort"/>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_zNIhSh90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_zNIhSx90EeeDjMvrp8ZYgw" name="TX capable">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_zNIhTB90EeeDjMvrp8ZYgw">
+                  <body></body>
+                </ownedComment>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_zNIhTR90EeeDjMvrp8ZYgw" name="RX capable"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_zNIhTh90EeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_zNIhTx90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_zNIhUB90EeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+            </nestedClassifier>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_zNIhUR90EeeDjMvrp8ZYgw" name="FRE">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_zNIhUh90EeeDjMvrp8ZYgw" name="RfPort"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_zNIhUx90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_zNIhVB90EeeDjMvrp8ZYgw" name="RfPort"/>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_zNIhVR90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_zNIhVh90EeeDjMvrp8ZYgw" name="TX capable">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_zNIhVx90EeeDjMvrp8ZYgw">
+                  <body></body>
+                </ownedComment>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_zNIhWB90EeeDjMvrp8ZYgw" name="RX capable"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_zNIhWR90EeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_zNIhWh90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_zNIhWx90EeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_zNIhXB90EeeDjMvrp8ZYgw" name="DataPort">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_zNIhXR90EeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_zNIhXh90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_zNIhXx90EeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_zNIhYB90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_zNIhYR90EeeDjMvrp8ZYgw" name="TX capable">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_zNIhYh90EeeDjMvrp8ZYgw">
+                    <body></body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_zNIhYx90EeeDjMvrp8ZYgw" name="RX capable"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_zNIhZB90EeeDjMvrp8ZYgw" name="RfPort"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_zNIhZR90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_zNIhZh90EeeDjMvrp8ZYgw" name="RfPort"/>
+                </nestedClassifier>
+              </nestedClassifier>
+            </nestedClassifier>
+          </nestedClassifier>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_zgRfsB90EeeDjMvrp8ZYgw" name="CopyOf_RBBRU_1">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_zgRfsR90EeeDjMvrp8ZYgw" name="RfPort"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_zgRfsh90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_zgRfsx90EeeDjMvrp8ZYgw" name="RfPort"/>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_zgRftB90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_zgRftR90EeeDjMvrp8ZYgw" name="TX capable">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_zgRfth90EeeDjMvrp8ZYgw">
+                <body></body>
+              </ownedComment>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_zgRftx90EeeDjMvrp8ZYgw" name="RX capable"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_zgRfuB90EeeDjMvrp8ZYgw" name="RfPort"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_zgRfuR90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_zgRfuh90EeeDjMvrp8ZYgw" name="RfPort"/>
+            </nestedClassifier>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_zgRfux90EeeDjMvrp8ZYgw" name="DataPort">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_zgRfvB90EeeDjMvrp8ZYgw" name="RfPort"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_zgRfvR90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_zgRfvh90EeeDjMvrp8ZYgw" name="RfPort"/>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_zgRfvx90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_zgRfwB90EeeDjMvrp8ZYgw" name="TX capable">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_zgRfwR90EeeDjMvrp8ZYgw">
+                  <body></body>
+                </ownedComment>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_zgRfwh90EeeDjMvrp8ZYgw" name="RX capable"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_zgRfwx90EeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_zgRfxB90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_zgRfxR90EeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+            </nestedClassifier>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_zgRfxh90EeeDjMvrp8ZYgw" name="FRE">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_zgRfxx90EeeDjMvrp8ZYgw" name="RfPort"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_zgRfyB90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_zgRfyR90EeeDjMvrp8ZYgw" name="RfPort"/>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_zgRfyh90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_zgRfyx90EeeDjMvrp8ZYgw" name="TX capable">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_zgRfzB90EeeDjMvrp8ZYgw">
+                  <body></body>
+                </ownedComment>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_zgRfzR90EeeDjMvrp8ZYgw" name="RX capable"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_zgRfzh90EeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_zgRfzx90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_zgRf0B90EeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_zgRf0R90EeeDjMvrp8ZYgw" name="DataPort">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_zgRf0h90EeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_zgRf0x90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_zgRf1B90EeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_zgRf1R90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_zgRf1h90EeeDjMvrp8ZYgw" name="TX capable">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_zgRf1x90EeeDjMvrp8ZYgw">
+                    <body></body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_zgRf2B90EeeDjMvrp8ZYgw" name="RX capable"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_zgRf2R90EeeDjMvrp8ZYgw" name="RfPort"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_zgRf2h90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_zgRf2x90EeeDjMvrp8ZYgw" name="RfPort"/>
+                </nestedClassifier>
+              </nestedClassifier>
+            </nestedClassifier>
+          </nestedClassifier>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_0WsxYB90EeeDjMvrp8ZYgw" name="CopyOf_RBBRU_2">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_0WsxYR90EeeDjMvrp8ZYgw" name="RfPort"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_0WsxYh90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_0WsxYx90EeeDjMvrp8ZYgw" name="RfPort"/>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_0WsxZB90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_0WsxZR90EeeDjMvrp8ZYgw" name="TX capable">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_0WsxZh90EeeDjMvrp8ZYgw">
+                <body></body>
+              </ownedComment>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_0WsxZx90EeeDjMvrp8ZYgw" name="RX capable"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_0WsxaB90EeeDjMvrp8ZYgw" name="RfPort"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_0WsxaR90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsxah90EeeDjMvrp8ZYgw" name="RfPort"/>
+            </nestedClassifier>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsxax90EeeDjMvrp8ZYgw" name="DataPort">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_0WsxbB90EeeDjMvrp8ZYgw" name="RfPort"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_0WsxbR90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsxbh90EeeDjMvrp8ZYgw" name="RfPort"/>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsxbx90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_0WsxcB90EeeDjMvrp8ZYgw" name="TX capable">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_0WsxcR90EeeDjMvrp8ZYgw">
+                  <body></body>
+                </ownedComment>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_0Wsxch90EeeDjMvrp8ZYgw" name="RX capable"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsxcx90EeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_0WsxdB90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_0WsxdR90EeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+            </nestedClassifier>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsxdh90EeeDjMvrp8ZYgw" name="FRE">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsxdx90EeeDjMvrp8ZYgw" name="RfPort"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_0WsxeB90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_0WsxeR90EeeDjMvrp8ZYgw" name="RfPort"/>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsxeh90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_0Wsxex90EeeDjMvrp8ZYgw" name="TX capable">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_0WsxfB90EeeDjMvrp8ZYgw">
+                  <body></body>
+                </ownedComment>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_0WsxfR90EeeDjMvrp8ZYgw" name="RX capable"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsxfh90EeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsxfx90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_0WsxgB90EeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_0WsxgR90EeeDjMvrp8ZYgw" name="DataPort">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsxgh90EeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsxgx90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_0WsxhB90EeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_0WsxhR90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_0Wsxhh90EeeDjMvrp8ZYgw" name="TX capable">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_0Wsxhx90EeeDjMvrp8ZYgw">
+                    <body></body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_0WsxiB90EeeDjMvrp8ZYgw" name="RX capable"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_0WsxiR90EeeDjMvrp8ZYgw" name="RfPort"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsxih90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsxix90EeeDjMvrp8ZYgw" name="RfPort"/>
+                </nestedClassifier>
+              </nestedClassifier>
+            </nestedClassifier>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_0WsxjB90EeeDjMvrp8ZYgw" name="RBBRU">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_0WsxjR90EeeDjMvrp8ZYgw" name="RfPort"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsxjh90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsxjx90EeeDjMvrp8ZYgw" name="RfPort"/>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_0WsxkB90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_0WsxkR90EeeDjMvrp8ZYgw" name="TX capable">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_0Wsxkh90EeeDjMvrp8ZYgw">
+                  <body></body>
+                </ownedComment>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_0Wsxkx90EeeDjMvrp8ZYgw" name="RX capable"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_0WsxlB90EeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_0WsxlR90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsxlh90EeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsxlx90EeeDjMvrp8ZYgw" name="DataPort">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_0WsxmB90EeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_0WsxmR90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsxmh90EeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsxmx90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_0WsxnB90EeeDjMvrp8ZYgw" name="TX capable">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_0WsxnR90EeeDjMvrp8ZYgw">
+                    <body></body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_0Wsxnh90EeeDjMvrp8ZYgw" name="RX capable"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsxnx90EeeDjMvrp8ZYgw" name="RfPort"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_0WsxoB90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_0WsxoR90EeeDjMvrp8ZYgw" name="RfPort"/>
+                </nestedClassifier>
+              </nestedClassifier>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsxoh90EeeDjMvrp8ZYgw" name="FRE">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsxox90EeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_0WsxpB90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_0WsxpR90EeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsxph90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_0Wsxpx90EeeDjMvrp8ZYgw" name="TX capable">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_0WsxqB90EeeDjMvrp8ZYgw">
+                    <body></body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_0WsxqR90EeeDjMvrp8ZYgw" name="RX capable"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsxqh90EeeDjMvrp8ZYgw" name="RfPort"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsxqx90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_0WsxrB90EeeDjMvrp8ZYgw" name="RfPort"/>
+                </nestedClassifier>
+              </nestedClassifier>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_0WsxrR90EeeDjMvrp8ZYgw" name="DataPort">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsxrh90EeeDjMvrp8ZYgw" name="RfPort"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsxrx90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_0WsxsB90EeeDjMvrp8ZYgw" name="RfPort"/>
+                </nestedClassifier>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_0WsxsR90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_0Wsxsh90EeeDjMvrp8ZYgw" name="TX capable">
+                    <ownedComment xmi:type="uml:Comment" xmi:id="_0Wsxsx90EeeDjMvrp8ZYgw">
+                      <body></body>
+                    </ownedComment>
+                  </ownedAttribute>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_0WsxtB90EeeDjMvrp8ZYgw" name="RX capable"/>
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_0WsxtR90EeeDjMvrp8ZYgw" name="RfPort"/>
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsxth90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                    <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsxtx90EeeDjMvrp8ZYgw" name="RfPort"/>
+                  </nestedClassifier>
+                </nestedClassifier>
+              </nestedClassifier>
+            </nestedClassifier>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_0WsxuB90EeeDjMvrp8ZYgw" name="CopyOf_RBBRU_1">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_0WsxuR90EeeDjMvrp8ZYgw" name="RfPort"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsxuh90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsxux90EeeDjMvrp8ZYgw" name="RfPort"/>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_0WsxvB90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_0WsxvR90EeeDjMvrp8ZYgw" name="TX capable">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_0Wsxvh90EeeDjMvrp8ZYgw">
+                  <body></body>
+                </ownedComment>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_0Wsxvx90EeeDjMvrp8ZYgw" name="RX capable"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_0WsxwB90EeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_0WsxwR90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsxwh90EeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsxwx90EeeDjMvrp8ZYgw" name="DataPort">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_0WsxxB90EeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_0WsxxR90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsxxh90EeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsxxx90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_0WsxyB90EeeDjMvrp8ZYgw" name="TX capable">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_0WsxyR90EeeDjMvrp8ZYgw">
+                    <body></body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_0Wsxyh90EeeDjMvrp8ZYgw" name="RX capable"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsxyx90EeeDjMvrp8ZYgw" name="RfPort"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_0WsxzB90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_0WsxzR90EeeDjMvrp8ZYgw" name="RfPort"/>
+                </nestedClassifier>
+              </nestedClassifier>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsxzh90EeeDjMvrp8ZYgw" name="FRE">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsxzx90EeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsx0B90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsx0R90EeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsx0h90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_0Wsx0x90EeeDjMvrp8ZYgw" name="TX capable">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_0Wsx1B90EeeDjMvrp8ZYgw">
+                    <body></body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_0Wsx1R90EeeDjMvrp8ZYgw" name="RX capable"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsx1h90EeeDjMvrp8ZYgw" name="RfPort"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsx1x90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsx2B90EeeDjMvrp8ZYgw" name="RfPort"/>
+                </nestedClassifier>
+              </nestedClassifier>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsx2R90EeeDjMvrp8ZYgw" name="DataPort">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsx2h90EeeDjMvrp8ZYgw" name="RfPort"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsx2x90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsx3B90EeeDjMvrp8ZYgw" name="RfPort"/>
+                </nestedClassifier>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsx3R90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_0Wsx3h90EeeDjMvrp8ZYgw" name="TX capable">
+                    <ownedComment xmi:type="uml:Comment" xmi:id="_0Wsx3x90EeeDjMvrp8ZYgw">
+                      <body></body>
+                    </ownedComment>
+                  </ownedAttribute>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_0Wsx4B90EeeDjMvrp8ZYgw" name="RX capable"/>
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsx4R90EeeDjMvrp8ZYgw" name="RfPort"/>
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsx4h90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                    <nestedClassifier xmi:type="uml:Class" xmi:id="_0Wsx4x90EeeDjMvrp8ZYgw" name="RfPort"/>
+                  </nestedClassifier>
+                </nestedClassifier>
+              </nestedClassifier>
+            </nestedClassifier>
+          </nestedClassifier>
+        </nestedClassifier>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_YqL-IB9gEeeDjMvrp8ZYgw" name="DataPort">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_OC-CoB9yEeeDjMvrp8ZYgw" name="PortName"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_YqL-IR9gEeeDjMvrp8ZYgw" name="RfPort"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_YqL-Ih9gEeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_YqL-Ix9gEeeDjMvrp8ZYgw" name="RfPort"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_YqL-JB9gEeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_YqL-JR9gEeeDjMvrp8ZYgw" name="TX capable">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_YqL-Jh9gEeeDjMvrp8ZYgw">
+              <body></body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_YqL-Jx9gEeeDjMvrp8ZYgw" name="RX capable"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_YqL-KB9gEeeDjMvrp8ZYgw" name="RfPort"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_YqL-KR9gEeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_YqL-Kh9gEeeDjMvrp8ZYgw" name="RfPort"/>
+          </nestedClassifier>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_YqL-Kx9gEeeDjMvrp8ZYgw" name="DataPort">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_YqL-LB9gEeeDjMvrp8ZYgw" name="RfPort"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_YqL-LR9gEeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_YqL-Lh9gEeeDjMvrp8ZYgw" name="RfPort"/>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_YqL-Lx9gEeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_YqL-MB9gEeeDjMvrp8ZYgw" name="TX capable">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_YqL-MR9gEeeDjMvrp8ZYgw">
+                <body></body>
+              </ownedComment>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_YqL-Mh9gEeeDjMvrp8ZYgw" name="RX capable"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_YqL-Mx9gEeeDjMvrp8ZYgw" name="RfPort"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_YqL-NB9gEeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_YqL-NR9gEeeDjMvrp8ZYgw" name="RfPort"/>
+            </nestedClassifier>
+          </nestedClassifier>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_YqL-Nh9gEeeDjMvrp8ZYgw" name="FRE">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_YqL-Nx9gEeeDjMvrp8ZYgw" name="RfPort"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_YqL-OB9gEeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_YqL-OR9gEeeDjMvrp8ZYgw" name="RfPort"/>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_YqL-Oh9gEeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_YqL-Ox9gEeeDjMvrp8ZYgw" name="TX capable">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_YqL-PB9gEeeDjMvrp8ZYgw">
+                <body></body>
+              </ownedComment>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_YqL-PR9gEeeDjMvrp8ZYgw" name="RX capable"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_YqL-Ph9gEeeDjMvrp8ZYgw" name="RfPort"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_YqL-Px9gEeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_YqL-QB9gEeeDjMvrp8ZYgw" name="RfPort"/>
+            </nestedClassifier>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_YqL-QR9gEeeDjMvrp8ZYgw" name="DataPort">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_YqL-Qh9gEeeDjMvrp8ZYgw" name="RfPort"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_YqL-Qx9gEeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_YqL-RB9gEeeDjMvrp8ZYgw" name="RfPort"/>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_YqL-RR9gEeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_YqL-Rh9gEeeDjMvrp8ZYgw" name="TX capable">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_YqL-Rx9gEeeDjMvrp8ZYgw">
+                  <body></body>
+                </ownedComment>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_YqL-SB9gEeeDjMvrp8ZYgw" name="RX capable"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_YqL-SR9gEeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_YqL-Sh9gEeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_YqL-Sx9gEeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+            </nestedClassifier>
+          </nestedClassifier>
+        </nestedClassifier>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_cqIlgB9gEeeDjMvrp8ZYgw" name="Rfport">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_CAB1MB9yEeeDjMvrp8ZYgw" name="PortName"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_cqIlgR9gEeeDjMvrp8ZYgw" name="RfPort"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_cqIlgh9gEeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_cqIlgx9gEeeDjMvrp8ZYgw" name="RfPort"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_cqIlhB9gEeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_cqIlhR9gEeeDjMvrp8ZYgw" name="TX capable">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_cqIlhh9gEeeDjMvrp8ZYgw">
+              <body></body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_cqIlhx9gEeeDjMvrp8ZYgw" name="RX capable"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_cqIliB9gEeeDjMvrp8ZYgw" name="RfPort"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_cqIliR9gEeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_cqIlih9gEeeDjMvrp8ZYgw" name="RfPort"/>
+          </nestedClassifier>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_cqIlix9gEeeDjMvrp8ZYgw" name="DataPort">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_cqIljB9gEeeDjMvrp8ZYgw" name="RfPort"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_cqIljR9gEeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_cqIljh9gEeeDjMvrp8ZYgw" name="RfPort"/>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_cqIljx9gEeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_cqIlkB9gEeeDjMvrp8ZYgw" name="TX capable">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_cqIlkR9gEeeDjMvrp8ZYgw">
+                <body></body>
+              </ownedComment>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_cqIlkh9gEeeDjMvrp8ZYgw" name="RX capable"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_cqIlkx9gEeeDjMvrp8ZYgw" name="RfPort"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_cqIllB9gEeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_cqIllR9gEeeDjMvrp8ZYgw" name="RfPort"/>
+            </nestedClassifier>
+          </nestedClassifier>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_cqIllh9gEeeDjMvrp8ZYgw" name="FRE">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_cqIllx9gEeeDjMvrp8ZYgw" name="RfPort"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_cqIlmB9gEeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_cqIlmR9gEeeDjMvrp8ZYgw" name="RfPort"/>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_cqIlmh9gEeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_cqIlmx9gEeeDjMvrp8ZYgw" name="TX capable">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_cqIlnB9gEeeDjMvrp8ZYgw">
+                <body></body>
+              </ownedComment>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_cqIlnR9gEeeDjMvrp8ZYgw" name="RX capable"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_cqIlnh9gEeeDjMvrp8ZYgw" name="RfPort"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_cqIlnx9gEeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_cqIloB9gEeeDjMvrp8ZYgw" name="RfPort"/>
+            </nestedClassifier>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_cqIloR9gEeeDjMvrp8ZYgw" name="DataPort">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_cqIloh9gEeeDjMvrp8ZYgw" name="RfPort"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_cqIlox9gEeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_cqIlpB9gEeeDjMvrp8ZYgw" name="RfPort"/>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_cqIlpR9gEeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_cqIlph9gEeeDjMvrp8ZYgw" name="TX capable">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_cqIlpx9gEeeDjMvrp8ZYgw">
+                  <body></body>
+                </ownedComment>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_cqIlqB9gEeeDjMvrp8ZYgw" name="RX capable"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_cqIlqR9gEeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_cqIlqh9gEeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_cqIlqx9gEeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+            </nestedClassifier>
+          </nestedClassifier>
+        </nestedClassifier>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_89R8wB9gEeeDjMvrp8ZYgw" memberEnd="_89Tx8R9gEeeDjMvrp8ZYgw _89VAEB9gEeeDjMvrp8ZYgw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_89TK4B9gEeeDjMvrp8ZYgw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_89Tx8B9gEeeDjMvrp8ZYgw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_89VAEB9gEeeDjMvrp8ZYgw" name="rbbtype" type="_9oQ60B9dEeeDjMvrp8ZYgw" association="_89R8wB9gEeeDjMvrp8ZYgw"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_89Tx8R9gEeeDjMvrp8ZYgw" name="rutype" type="_6N9sQB9fEeeDjMvrp8ZYgw" aggregation="composite" association="_89R8wB9gEeeDjMvrp8ZYgw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CTwSMB9hEeeDjMvrp8ZYgw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CT6DMB9hEeeDjMvrp8ZYgw" value="*"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_GShN0B9hEeeDjMvrp8ZYgw" memberEnd="_GSjqER9hEeeDjMvrp8ZYgw _GSkRIB9hEeeDjMvrp8ZYgw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GSjDAB9hEeeDjMvrp8ZYgw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GSjqEB9hEeeDjMvrp8ZYgw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_GSkRIB9hEeeDjMvrp8ZYgw" name="rutype" type="_6N9sQB9fEeeDjMvrp8ZYgw" association="_GShN0B9hEeeDjMvrp8ZYgw"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_GSjqER9hEeeDjMvrp8ZYgw" name="dataport" type="_YqL-IB9gEeeDjMvrp8ZYgw" aggregation="composite" association="_GShN0B9hEeeDjMvrp8ZYgw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LFGzEB9hEeeDjMvrp8ZYgw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LFOu4B9hEeeDjMvrp8ZYgw" value="*"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_JU7O4B9hEeeDjMvrp8ZYgw" memberEnd="_JU9EER9hEeeDjMvrp8ZYgw _JU9rIB9hEeeDjMvrp8ZYgw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JU8dAB9hEeeDjMvrp8ZYgw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JU9EEB9hEeeDjMvrp8ZYgw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_JU9rIB9hEeeDjMvrp8ZYgw" name="rutype" type="_6N9sQB9fEeeDjMvrp8ZYgw" association="_JU7O4B9hEeeDjMvrp8ZYgw"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_JU9EER9hEeeDjMvrp8ZYgw" name="rfport" type="_cqIlgB9gEeeDjMvrp8ZYgw" aggregation="composite" association="_JU7O4B9hEeeDjMvrp8ZYgw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PsDwEB9hEeeDjMvrp8ZYgw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PsRLcB9hEeeDjMvrp8ZYgw" value="*"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Y3QUUB9hEeeDjMvrp8ZYgw" memberEnd="_Y3SwkB9hEeeDjMvrp8ZYgw _Y3TXoB9hEeeDjMvrp8ZYgw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Y3RicB9hEeeDjMvrp8ZYgw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Y3SJgB9hEeeDjMvrp8ZYgw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_Y3TXoB9hEeeDjMvrp8ZYgw" name="rbbdataport" type="_1KN7AB9eEeeDjMvrp8ZYgw" association="_Y3QUUB9hEeeDjMvrp8ZYgw"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_Y3SwkB9hEeeDjMvrp8ZYgw" name="dataport" type="_YqL-IB9gEeeDjMvrp8ZYgw" association="_Y3QUUB9hEeeDjMvrp8ZYgw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_aTdzoB9hEeeDjMvrp8ZYgw" memberEnd="_aTfBwh9hEeeDjMvrp8ZYgw _aTfo0B9hEeeDjMvrp8ZYgw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_aTfBwB9hEeeDjMvrp8ZYgw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_aTfBwR9hEeeDjMvrp8ZYgw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_aTfo0B9hEeeDjMvrp8ZYgw" name="rbbrfport" type="_OYgk4B9eEeeDjMvrp8ZYgw" association="_aTdzoB9hEeeDjMvrp8ZYgw"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_aTfBwh9hEeeDjMvrp8ZYgw" name="rfport" type="_cqIlgB9gEeeDjMvrp8ZYgw" association="_aTdzoB9hEeeDjMvrp8ZYgw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_cZKFEB9yEeeDjMvrp8ZYgw" name="FRE"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_nM0b8B9yEeeDjMvrp8ZYgw" client="_cZKFEB9yEeeDjMvrp8ZYgw" supplier="_6N9sQB9fEeeDjMvrp8ZYgw"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_oiUZ0B9zEeeDjMvrp8ZYgw" memberEnd="_oiXdIR9zEeeDjMvrp8ZYgw _oidjwB9zEeeDjMvrp8ZYgw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oiW2EB9zEeeDjMvrp8ZYgw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oiXdIB9zEeeDjMvrp8ZYgw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_oidjwB9zEeeDjMvrp8ZYgw" name="dataport" type="_YqL-IB9gEeeDjMvrp8ZYgw" association="_oiUZ0B9zEeeDjMvrp8ZYgw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YPeA8B90EeeDjMvrp8ZYgw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YQ0EwB90EeeDjMvrp8ZYgw" value="1"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_oiXdIR9zEeeDjMvrp8ZYgw" name="dataport" type="_YqL-IB9gEeeDjMvrp8ZYgw" association="_oiUZ0B9zEeeDjMvrp8ZYgw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Wg178B90EeeDjMvrp8ZYgw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WhuFsB90EeeDjMvrp8ZYgw" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_9u8TIB90EeeDjMvrp8ZYgw" name="InternalDigitalCable">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TIR90EeeDjMvrp8ZYgw" name="RfPort"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TIh90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TIx90EeeDjMvrp8ZYgw" name="RfPort"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TJB90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_9u8TJR90EeeDjMvrp8ZYgw" name="TX capable">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_9u8TJh90EeeDjMvrp8ZYgw">
+              <body></body>
+            </ownedComment>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_9u8TJx90EeeDjMvrp8ZYgw" name="RX capable"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TKB90EeeDjMvrp8ZYgw" name="RfPort"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TKR90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TKh90EeeDjMvrp8ZYgw" name="RfPort"/>
+          </nestedClassifier>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TKx90EeeDjMvrp8ZYgw" name="DataPort">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TLB90EeeDjMvrp8ZYgw" name="RfPort"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TLR90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TLh90EeeDjMvrp8ZYgw" name="RfPort"/>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TLx90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_9u8TMB90EeeDjMvrp8ZYgw" name="TX capable">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_9u8TMR90EeeDjMvrp8ZYgw">
+                <body></body>
+              </ownedComment>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_9u8TMh90EeeDjMvrp8ZYgw" name="RX capable"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TMx90EeeDjMvrp8ZYgw" name="RfPort"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TNB90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TNR90EeeDjMvrp8ZYgw" name="RfPort"/>
+            </nestedClassifier>
+          </nestedClassifier>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TNh90EeeDjMvrp8ZYgw" name="FRE">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TNx90EeeDjMvrp8ZYgw" name="RfPort"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TOB90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TOR90EeeDjMvrp8ZYgw" name="RfPort"/>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TOh90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_9u8TOx90EeeDjMvrp8ZYgw" name="TX capable">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_9u8TPB90EeeDjMvrp8ZYgw">
+                <body></body>
+              </ownedComment>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_9u8TPR90EeeDjMvrp8ZYgw" name="RX capable"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TPh90EeeDjMvrp8ZYgw" name="RfPort"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TPx90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TQB90EeeDjMvrp8ZYgw" name="RfPort"/>
+            </nestedClassifier>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TQR90EeeDjMvrp8ZYgw" name="DataPort">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TQh90EeeDjMvrp8ZYgw" name="RfPort"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TQx90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TRB90EeeDjMvrp8ZYgw" name="RfPort"/>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TRR90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_9u8TRh90EeeDjMvrp8ZYgw" name="TX capable">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_9u8TRx90EeeDjMvrp8ZYgw">
+                  <body></body>
+                </ownedComment>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_9u8TSB90EeeDjMvrp8ZYgw" name="RX capable"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TSR90EeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TSh90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TSx90EeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+            </nestedClassifier>
+          </nestedClassifier>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TTB90EeeDjMvrp8ZYgw" name="RBBRU">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TTR90EeeDjMvrp8ZYgw" name="RfPort"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TTh90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TTx90EeeDjMvrp8ZYgw" name="RfPort"/>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TUB90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_9u8TUR90EeeDjMvrp8ZYgw" name="TX capable">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_9u8TUh90EeeDjMvrp8ZYgw">
+                <body></body>
+              </ownedComment>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_9u8TUx90EeeDjMvrp8ZYgw" name="RX capable"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TVB90EeeDjMvrp8ZYgw" name="RfPort"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TVR90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TVh90EeeDjMvrp8ZYgw" name="RfPort"/>
+            </nestedClassifier>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TVx90EeeDjMvrp8ZYgw" name="DataPort">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TWB90EeeDjMvrp8ZYgw" name="RfPort"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TWR90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TWh90EeeDjMvrp8ZYgw" name="RfPort"/>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TWx90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_9u8TXB90EeeDjMvrp8ZYgw" name="TX capable">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_9u8TXR90EeeDjMvrp8ZYgw">
+                  <body></body>
+                </ownedComment>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_9u8TXh90EeeDjMvrp8ZYgw" name="RX capable"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TXx90EeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TYB90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TYR90EeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+            </nestedClassifier>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TYh90EeeDjMvrp8ZYgw" name="FRE">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TYx90EeeDjMvrp8ZYgw" name="RfPort"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TZB90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TZR90EeeDjMvrp8ZYgw" name="RfPort"/>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TZh90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_9u8TZx90EeeDjMvrp8ZYgw" name="TX capable">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_9u8TaB90EeeDjMvrp8ZYgw">
+                  <body></body>
+                </ownedComment>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_9u8TaR90EeeDjMvrp8ZYgw" name="RX capable"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8Tah90EeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8Tax90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TbB90EeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TbR90EeeDjMvrp8ZYgw" name="DataPort">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8Tbh90EeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8Tbx90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TcB90EeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TcR90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_9u8Tch90EeeDjMvrp8ZYgw" name="TX capable">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_9u8Tcx90EeeDjMvrp8ZYgw">
+                    <body></body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_9u8TdB90EeeDjMvrp8ZYgw" name="RX capable"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TdR90EeeDjMvrp8ZYgw" name="RfPort"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8Tdh90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8Tdx90EeeDjMvrp8ZYgw" name="RfPort"/>
+                </nestedClassifier>
+              </nestedClassifier>
+            </nestedClassifier>
+          </nestedClassifier>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TeB90EeeDjMvrp8ZYgw" name="CopyOf_RBBRU_1">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TeR90EeeDjMvrp8ZYgw" name="RfPort"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8Teh90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8Tex90EeeDjMvrp8ZYgw" name="RfPort"/>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TfB90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_9u8TfR90EeeDjMvrp8ZYgw" name="TX capable">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_9u8Tfh90EeeDjMvrp8ZYgw">
+                <body></body>
+              </ownedComment>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_9u8Tfx90EeeDjMvrp8ZYgw" name="RX capable"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TgB90EeeDjMvrp8ZYgw" name="RfPort"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TgR90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8Tgh90EeeDjMvrp8ZYgw" name="RfPort"/>
+            </nestedClassifier>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8Tgx90EeeDjMvrp8ZYgw" name="DataPort">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8ThB90EeeDjMvrp8ZYgw" name="RfPort"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8ThR90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8Thh90EeeDjMvrp8ZYgw" name="RfPort"/>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8Thx90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_9u8TiB90EeeDjMvrp8ZYgw" name="TX capable">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_9u8TiR90EeeDjMvrp8ZYgw">
+                  <body></body>
+                </ownedComment>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_9u8Tih90EeeDjMvrp8ZYgw" name="RX capable"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8Tix90EeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TjB90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TjR90EeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+            </nestedClassifier>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8Tjh90EeeDjMvrp8ZYgw" name="FRE">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8Tjx90EeeDjMvrp8ZYgw" name="RfPort"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TkB90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TkR90EeeDjMvrp8ZYgw" name="RfPort"/>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8Tkh90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_9u8Tkx90EeeDjMvrp8ZYgw" name="TX capable">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_9u8TlB90EeeDjMvrp8ZYgw">
+                  <body></body>
+                </ownedComment>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_9u8TlR90EeeDjMvrp8ZYgw" name="RX capable"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8Tlh90EeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8Tlx90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TmB90EeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TmR90EeeDjMvrp8ZYgw" name="DataPort">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8Tmh90EeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8Tmx90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TnB90EeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TnR90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_9u8Tnh90EeeDjMvrp8ZYgw" name="TX capable">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_9u8Tnx90EeeDjMvrp8ZYgw">
+                    <body></body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_9u8ToB90EeeDjMvrp8ZYgw" name="RX capable"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8ToR90EeeDjMvrp8ZYgw" name="RfPort"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8Toh90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8Tox90EeeDjMvrp8ZYgw" name="RfPort"/>
+                </nestedClassifier>
+              </nestedClassifier>
+            </nestedClassifier>
+          </nestedClassifier>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TpB90EeeDjMvrp8ZYgw" name="CopyOf_RBBRU_2">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TpR90EeeDjMvrp8ZYgw" name="RfPort"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8Tph90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8Tpx90EeeDjMvrp8ZYgw" name="RfPort"/>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TqB90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_9u8TqR90EeeDjMvrp8ZYgw" name="TX capable">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_9u8Tqh90EeeDjMvrp8ZYgw">
+                <body></body>
+              </ownedComment>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_9u8Tqx90EeeDjMvrp8ZYgw" name="RX capable"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TrB90EeeDjMvrp8ZYgw" name="RfPort"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TrR90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8Trh90EeeDjMvrp8ZYgw" name="RfPort"/>
+            </nestedClassifier>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8Trx90EeeDjMvrp8ZYgw" name="DataPort">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TsB90EeeDjMvrp8ZYgw" name="RfPort"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8TsR90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8Tsh90EeeDjMvrp8ZYgw" name="RfPort"/>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u8Tsx90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_9u86MB90EeeDjMvrp8ZYgw" name="TX capable">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_9u86MR90EeeDjMvrp8ZYgw">
+                  <body></body>
+                </ownedComment>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_9u86Mh90EeeDjMvrp8ZYgw" name="RX capable"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86Mx90EeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86NB90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86NR90EeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+            </nestedClassifier>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86Nh90EeeDjMvrp8ZYgw" name="FRE">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86Nx90EeeDjMvrp8ZYgw" name="RfPort"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86OB90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86OR90EeeDjMvrp8ZYgw" name="RfPort"/>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86Oh90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_9u86Ox90EeeDjMvrp8ZYgw" name="TX capable">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_9u86PB90EeeDjMvrp8ZYgw">
+                  <body></body>
+                </ownedComment>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_9u86PR90EeeDjMvrp8ZYgw" name="RX capable"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86Ph90EeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86Px90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86QB90EeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86QR90EeeDjMvrp8ZYgw" name="DataPort">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86Qh90EeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86Qx90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86RB90EeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86RR90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_9u86Rh90EeeDjMvrp8ZYgw" name="TX capable">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_9u86Rx90EeeDjMvrp8ZYgw">
+                    <body></body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_9u86SB90EeeDjMvrp8ZYgw" name="RX capable"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86SR90EeeDjMvrp8ZYgw" name="RfPort"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86Sh90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86Sx90EeeDjMvrp8ZYgw" name="RfPort"/>
+                </nestedClassifier>
+              </nestedClassifier>
+            </nestedClassifier>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86TB90EeeDjMvrp8ZYgw" name="RBBRU">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86TR90EeeDjMvrp8ZYgw" name="RfPort"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86Th90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86Tx90EeeDjMvrp8ZYgw" name="RfPort"/>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86UB90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_9u86UR90EeeDjMvrp8ZYgw" name="TX capable">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_9u86Uh90EeeDjMvrp8ZYgw">
+                  <body></body>
+                </ownedComment>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_9u86Ux90EeeDjMvrp8ZYgw" name="RX capable"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86VB90EeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86VR90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86Vh90EeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86Vx90EeeDjMvrp8ZYgw" name="DataPort">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86WB90EeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86WR90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86Wh90EeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86Wx90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_9u86XB90EeeDjMvrp8ZYgw" name="TX capable">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_9u86XR90EeeDjMvrp8ZYgw">
+                    <body></body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_9u86Xh90EeeDjMvrp8ZYgw" name="RX capable"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86Xx90EeeDjMvrp8ZYgw" name="RfPort"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86YB90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86YR90EeeDjMvrp8ZYgw" name="RfPort"/>
+                </nestedClassifier>
+              </nestedClassifier>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86Yh90EeeDjMvrp8ZYgw" name="FRE">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86Yx90EeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86ZB90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86ZR90EeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86Zh90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_9u86Zx90EeeDjMvrp8ZYgw" name="TX capable">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_9u86aB90EeeDjMvrp8ZYgw">
+                    <body></body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_9u86aR90EeeDjMvrp8ZYgw" name="RX capable"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86ah90EeeDjMvrp8ZYgw" name="RfPort"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86ax90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86bB90EeeDjMvrp8ZYgw" name="RfPort"/>
+                </nestedClassifier>
+              </nestedClassifier>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86bR90EeeDjMvrp8ZYgw" name="DataPort">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86bh90EeeDjMvrp8ZYgw" name="RfPort"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86bx90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86cB90EeeDjMvrp8ZYgw" name="RfPort"/>
+                </nestedClassifier>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86cR90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_9u86ch90EeeDjMvrp8ZYgw" name="TX capable">
+                    <ownedComment xmi:type="uml:Comment" xmi:id="_9u86cx90EeeDjMvrp8ZYgw">
+                      <body></body>
+                    </ownedComment>
+                  </ownedAttribute>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_9u86dB90EeeDjMvrp8ZYgw" name="RX capable"/>
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86dR90EeeDjMvrp8ZYgw" name="RfPort"/>
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86dh90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                    <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86dx90EeeDjMvrp8ZYgw" name="RfPort"/>
+                  </nestedClassifier>
+                </nestedClassifier>
+              </nestedClassifier>
+            </nestedClassifier>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86eB90EeeDjMvrp8ZYgw" name="CopyOf_RBBRU_1">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86eR90EeeDjMvrp8ZYgw" name="RfPort"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86eh90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86ex90EeeDjMvrp8ZYgw" name="RfPort"/>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86fB90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_9u86fR90EeeDjMvrp8ZYgw" name="TX capable">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_9u86fh90EeeDjMvrp8ZYgw">
+                  <body></body>
+                </ownedComment>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_9u86fx90EeeDjMvrp8ZYgw" name="RX capable"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86gB90EeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86gR90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86gh90EeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86gx90EeeDjMvrp8ZYgw" name="DataPort">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86hB90EeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86hR90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86hh90EeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86hx90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_9u86iB90EeeDjMvrp8ZYgw" name="TX capable">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_9u86iR90EeeDjMvrp8ZYgw">
+                    <body></body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_9u86ih90EeeDjMvrp8ZYgw" name="RX capable"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86ix90EeeDjMvrp8ZYgw" name="RfPort"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86jB90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86jR90EeeDjMvrp8ZYgw" name="RfPort"/>
+                </nestedClassifier>
+              </nestedClassifier>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86jh90EeeDjMvrp8ZYgw" name="FRE">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86jx90EeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86kB90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86kR90EeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86kh90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_9u86kx90EeeDjMvrp8ZYgw" name="TX capable">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_9u86lB90EeeDjMvrp8ZYgw">
+                    <body></body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_9u86lR90EeeDjMvrp8ZYgw" name="RX capable"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86lh90EeeDjMvrp8ZYgw" name="RfPort"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86lx90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86mB90EeeDjMvrp8ZYgw" name="RfPort"/>
+                </nestedClassifier>
+              </nestedClassifier>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86mR90EeeDjMvrp8ZYgw" name="DataPort">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86mh90EeeDjMvrp8ZYgw" name="RfPort"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86mx90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86nB90EeeDjMvrp8ZYgw" name="RfPort"/>
+                </nestedClassifier>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86nR90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_9u86nh90EeeDjMvrp8ZYgw" name="TX capable">
+                    <ownedComment xmi:type="uml:Comment" xmi:id="_9u86nx90EeeDjMvrp8ZYgw">
+                      <body></body>
+                    </ownedComment>
+                  </ownedAttribute>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_9u86oB90EeeDjMvrp8ZYgw" name="RX capable"/>
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86oR90EeeDjMvrp8ZYgw" name="RfPort"/>
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86oh90EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                    <nestedClassifier xmi:type="uml:Class" xmi:id="_9u86ox90EeeDjMvrp8ZYgw" name="RfPort"/>
+                  </nestedClassifier>
+                </nestedClassifier>
+              </nestedClassifier>
+            </nestedClassifier>
+          </nestedClassifier>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_TRVdkB91EeeDjMvrp8ZYgw" name="InternalDigitalCable">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_TRVdkR91EeeDjMvrp8ZYgw" name="RfPort"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_TRVdkh91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_TRVdkx91EeeDjMvrp8ZYgw" name="RfPort"/>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_TRVdlB91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_TRVdlR91EeeDjMvrp8ZYgw" name="TX capable">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_TRVdlh91EeeDjMvrp8ZYgw">
+                <body></body>
+              </ownedComment>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_TRVdlx91EeeDjMvrp8ZYgw" name="RX capable"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_TRVdmB91EeeDjMvrp8ZYgw" name="RfPort"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_TRVdmR91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRVdmh91EeeDjMvrp8ZYgw" name="RfPort"/>
+            </nestedClassifier>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_TRVdmx91EeeDjMvrp8ZYgw" name="DataPort">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_TRVdnB91EeeDjMvrp8ZYgw" name="RfPort"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_TRVdnR91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRVdnh91EeeDjMvrp8ZYgw" name="RfPort"/>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_TRVdnx91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_TRVdoB91EeeDjMvrp8ZYgw" name="TX capable">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_TRVdoR91EeeDjMvrp8ZYgw">
+                  <body></body>
+                </ownedComment>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_TRVdoh91EeeDjMvrp8ZYgw" name="RX capable"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRVdox91EeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRVdpB91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRVdpR91EeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+            </nestedClassifier>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_TRVdph91EeeDjMvrp8ZYgw" name="FRE">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_TRVdpx91EeeDjMvrp8ZYgw" name="RfPort"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_TRVdqB91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRVdqR91EeeDjMvrp8ZYgw" name="RfPort"/>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_TRVdqh91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_TRVdqx91EeeDjMvrp8ZYgw" name="TX capable">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_TRVdrB91EeeDjMvrp8ZYgw">
+                  <body></body>
+                </ownedComment>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_TRVdrR91EeeDjMvrp8ZYgw" name="RX capable"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRVdrh91EeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRVdrx91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRVdsB91EeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWEoB91EeeDjMvrp8ZYgw" name="DataPort">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWEoR91EeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWEoh91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWEox91EeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWEpB91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_TRWEpR91EeeDjMvrp8ZYgw" name="TX capable">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_TRWEph91EeeDjMvrp8ZYgw">
+                    <body></body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_TRWEpx91EeeDjMvrp8ZYgw" name="RX capable"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWEqB91EeeDjMvrp8ZYgw" name="RfPort"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWEqR91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWEqh91EeeDjMvrp8ZYgw" name="RfPort"/>
+                </nestedClassifier>
+              </nestedClassifier>
+            </nestedClassifier>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWEqx91EeeDjMvrp8ZYgw" name="RBBRU">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWErB91EeeDjMvrp8ZYgw" name="RfPort"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWErR91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWErh91EeeDjMvrp8ZYgw" name="RfPort"/>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWErx91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_TRWEsB91EeeDjMvrp8ZYgw" name="TX capable">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_TRWEsR91EeeDjMvrp8ZYgw">
+                  <body></body>
+                </ownedComment>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_TRWEsh91EeeDjMvrp8ZYgw" name="RX capable"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWEsx91EeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWEtB91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWEtR91EeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWEth91EeeDjMvrp8ZYgw" name="DataPort">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWEtx91EeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWEuB91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWEuR91EeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWEuh91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_TRWEux91EeeDjMvrp8ZYgw" name="TX capable">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_TRWEvB91EeeDjMvrp8ZYgw">
+                    <body></body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_TRWEvR91EeeDjMvrp8ZYgw" name="RX capable"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWEvh91EeeDjMvrp8ZYgw" name="RfPort"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWEvx91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWEwB91EeeDjMvrp8ZYgw" name="RfPort"/>
+                </nestedClassifier>
+              </nestedClassifier>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWEwR91EeeDjMvrp8ZYgw" name="FRE">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWEwh91EeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWEwx91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWExB91EeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWExR91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_TRWExh91EeeDjMvrp8ZYgw" name="TX capable">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_TRWExx91EeeDjMvrp8ZYgw">
+                    <body></body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_TRWEyB91EeeDjMvrp8ZYgw" name="RX capable"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWEyR91EeeDjMvrp8ZYgw" name="RfPort"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWEyh91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWEyx91EeeDjMvrp8ZYgw" name="RfPort"/>
+                </nestedClassifier>
+              </nestedClassifier>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWEzB91EeeDjMvrp8ZYgw" name="DataPort">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWEzR91EeeDjMvrp8ZYgw" name="RfPort"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWEzh91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWEzx91EeeDjMvrp8ZYgw" name="RfPort"/>
+                </nestedClassifier>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWE0B91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_TRWE0R91EeeDjMvrp8ZYgw" name="TX capable">
+                    <ownedComment xmi:type="uml:Comment" xmi:id="_TRWE0h91EeeDjMvrp8ZYgw">
+                      <body></body>
+                    </ownedComment>
+                  </ownedAttribute>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_TRWE0x91EeeDjMvrp8ZYgw" name="RX capable"/>
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWE1B91EeeDjMvrp8ZYgw" name="RfPort"/>
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWE1R91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                    <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWE1h91EeeDjMvrp8ZYgw" name="RfPort"/>
+                  </nestedClassifier>
+                </nestedClassifier>
+              </nestedClassifier>
+            </nestedClassifier>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWE1x91EeeDjMvrp8ZYgw" name="CopyOf_RBBRU_1">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWE2B91EeeDjMvrp8ZYgw" name="RfPort"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWE2R91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWE2h91EeeDjMvrp8ZYgw" name="RfPort"/>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWE2x91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_TRWE3B91EeeDjMvrp8ZYgw" name="TX capable">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_TRWE3R91EeeDjMvrp8ZYgw">
+                  <body></body>
+                </ownedComment>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_TRWE3h91EeeDjMvrp8ZYgw" name="RX capable"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWE3x91EeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWE4B91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWE4R91EeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWE4h91EeeDjMvrp8ZYgw" name="DataPort">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWE4x91EeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWE5B91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWE5R91EeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWE5h91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_TRWE5x91EeeDjMvrp8ZYgw" name="TX capable">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_TRWE6B91EeeDjMvrp8ZYgw">
+                    <body></body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_TRWE6R91EeeDjMvrp8ZYgw" name="RX capable"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWE6h91EeeDjMvrp8ZYgw" name="RfPort"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWE6x91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWE7B91EeeDjMvrp8ZYgw" name="RfPort"/>
+                </nestedClassifier>
+              </nestedClassifier>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWE7R91EeeDjMvrp8ZYgw" name="FRE">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWE7h91EeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWE7x91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWE8B91EeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWE8R91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_TRWE8h91EeeDjMvrp8ZYgw" name="TX capable">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_TRWE8x91EeeDjMvrp8ZYgw">
+                    <body></body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_TRWE9B91EeeDjMvrp8ZYgw" name="RX capable"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWE9R91EeeDjMvrp8ZYgw" name="RfPort"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWE9h91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWE9x91EeeDjMvrp8ZYgw" name="RfPort"/>
+                </nestedClassifier>
+              </nestedClassifier>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWE-B91EeeDjMvrp8ZYgw" name="DataPort">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWE-R91EeeDjMvrp8ZYgw" name="RfPort"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWE-h91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWE-x91EeeDjMvrp8ZYgw" name="RfPort"/>
+                </nestedClassifier>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWE_B91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_TRWE_R91EeeDjMvrp8ZYgw" name="TX capable">
+                    <ownedComment xmi:type="uml:Comment" xmi:id="_TRWE_h91EeeDjMvrp8ZYgw">
+                      <body></body>
+                    </ownedComment>
+                  </ownedAttribute>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_TRWE_x91EeeDjMvrp8ZYgw" name="RX capable"/>
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFAB91EeeDjMvrp8ZYgw" name="RfPort"/>
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFAR91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                    <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFAh91EeeDjMvrp8ZYgw" name="RfPort"/>
+                  </nestedClassifier>
+                </nestedClassifier>
+              </nestedClassifier>
+            </nestedClassifier>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFAx91EeeDjMvrp8ZYgw" name="CopyOf_RBBRU_2">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFBB91EeeDjMvrp8ZYgw" name="RfPort"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFBR91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFBh91EeeDjMvrp8ZYgw" name="RfPort"/>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFBx91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_TRWFCB91EeeDjMvrp8ZYgw" name="TX capable">
+                <ownedComment xmi:type="uml:Comment" xmi:id="_TRWFCR91EeeDjMvrp8ZYgw">
+                  <body></body>
+                </ownedComment>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_TRWFCh91EeeDjMvrp8ZYgw" name="RX capable"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFCx91EeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFDB91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFDR91EeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFDh91EeeDjMvrp8ZYgw" name="DataPort">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFDx91EeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFEB91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFER91EeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFEh91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_TRWFEx91EeeDjMvrp8ZYgw" name="TX capable">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_TRWFFB91EeeDjMvrp8ZYgw">
+                    <body></body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_TRWFFR91EeeDjMvrp8ZYgw" name="RX capable"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFFh91EeeDjMvrp8ZYgw" name="RfPort"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFFx91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFGB91EeeDjMvrp8ZYgw" name="RfPort"/>
+                </nestedClassifier>
+              </nestedClassifier>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFGR91EeeDjMvrp8ZYgw" name="FRE">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFGh91EeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFGx91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFHB91EeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFHR91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_TRWFHh91EeeDjMvrp8ZYgw" name="TX capable">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_TRWFHx91EeeDjMvrp8ZYgw">
+                    <body></body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_TRWFIB91EeeDjMvrp8ZYgw" name="RX capable"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFIR91EeeDjMvrp8ZYgw" name="RfPort"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFIh91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFIx91EeeDjMvrp8ZYgw" name="RfPort"/>
+                </nestedClassifier>
+              </nestedClassifier>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFJB91EeeDjMvrp8ZYgw" name="DataPort">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFJR91EeeDjMvrp8ZYgw" name="RfPort"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFJh91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFJx91EeeDjMvrp8ZYgw" name="RfPort"/>
+                </nestedClassifier>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFKB91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_TRWFKR91EeeDjMvrp8ZYgw" name="TX capable">
+                    <ownedComment xmi:type="uml:Comment" xmi:id="_TRWFKh91EeeDjMvrp8ZYgw">
+                      <body></body>
+                    </ownedComment>
+                  </ownedAttribute>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_TRWFKx91EeeDjMvrp8ZYgw" name="RX capable"/>
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFLB91EeeDjMvrp8ZYgw" name="RfPort"/>
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFLR91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                    <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFLh91EeeDjMvrp8ZYgw" name="RfPort"/>
+                  </nestedClassifier>
+                </nestedClassifier>
+              </nestedClassifier>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFLx91EeeDjMvrp8ZYgw" name="RBBRU">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFMB91EeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFMR91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFMh91EeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFMx91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_TRWFNB91EeeDjMvrp8ZYgw" name="TX capable">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_TRWFNR91EeeDjMvrp8ZYgw">
+                    <body></body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_TRWFNh91EeeDjMvrp8ZYgw" name="RX capable"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFNx91EeeDjMvrp8ZYgw" name="RfPort"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFOB91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFOR91EeeDjMvrp8ZYgw" name="RfPort"/>
+                </nestedClassifier>
+              </nestedClassifier>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFOh91EeeDjMvrp8ZYgw" name="DataPort">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFOx91EeeDjMvrp8ZYgw" name="RfPort"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFPB91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFPR91EeeDjMvrp8ZYgw" name="RfPort"/>
+                </nestedClassifier>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFPh91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_TRWFPx91EeeDjMvrp8ZYgw" name="TX capable">
+                    <ownedComment xmi:type="uml:Comment" xmi:id="_TRWFQB91EeeDjMvrp8ZYgw">
+                      <body></body>
+                    </ownedComment>
+                  </ownedAttribute>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_TRWFQR91EeeDjMvrp8ZYgw" name="RX capable"/>
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFQh91EeeDjMvrp8ZYgw" name="RfPort"/>
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFQx91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                    <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFRB91EeeDjMvrp8ZYgw" name="RfPort"/>
+                  </nestedClassifier>
+                </nestedClassifier>
+              </nestedClassifier>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFRR91EeeDjMvrp8ZYgw" name="FRE">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFRh91EeeDjMvrp8ZYgw" name="RfPort"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFRx91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFSB91EeeDjMvrp8ZYgw" name="RfPort"/>
+                </nestedClassifier>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFSR91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_TRWFSh91EeeDjMvrp8ZYgw" name="TX capable">
+                    <ownedComment xmi:type="uml:Comment" xmi:id="_TRWFSx91EeeDjMvrp8ZYgw">
+                      <body></body>
+                    </ownedComment>
+                  </ownedAttribute>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_TRWFTB91EeeDjMvrp8ZYgw" name="RX capable"/>
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFTR91EeeDjMvrp8ZYgw" name="RfPort"/>
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFTh91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                    <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFTx91EeeDjMvrp8ZYgw" name="RfPort"/>
+                  </nestedClassifier>
+                </nestedClassifier>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFUB91EeeDjMvrp8ZYgw" name="DataPort">
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFUR91EeeDjMvrp8ZYgw" name="RfPort"/>
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFUh91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                    <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFUx91EeeDjMvrp8ZYgw" name="RfPort"/>
+                  </nestedClassifier>
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFVB91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_TRWFVR91EeeDjMvrp8ZYgw" name="TX capable">
+                      <ownedComment xmi:type="uml:Comment" xmi:id="_TRWFVh91EeeDjMvrp8ZYgw">
+                        <body></body>
+                      </ownedComment>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_TRWFVx91EeeDjMvrp8ZYgw" name="RX capable"/>
+                    <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFWB91EeeDjMvrp8ZYgw" name="RfPort"/>
+                    <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFWR91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                      <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFWh91EeeDjMvrp8ZYgw" name="RfPort"/>
+                    </nestedClassifier>
+                  </nestedClassifier>
+                </nestedClassifier>
+              </nestedClassifier>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFWx91EeeDjMvrp8ZYgw" name="CopyOf_RBBRU_1">
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFXB91EeeDjMvrp8ZYgw" name="RfPort"/>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFXR91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFXh91EeeDjMvrp8ZYgw" name="RfPort"/>
+              </nestedClassifier>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFXx91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_TRWFYB91EeeDjMvrp8ZYgw" name="TX capable">
+                  <ownedComment xmi:type="uml:Comment" xmi:id="_TRWFYR91EeeDjMvrp8ZYgw">
+                    <body></body>
+                  </ownedComment>
+                </ownedAttribute>
+                <ownedAttribute xmi:type="uml:Property" xmi:id="_TRWFYh91EeeDjMvrp8ZYgw" name="RX capable"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFYx91EeeDjMvrp8ZYgw" name="RfPort"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFZB91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFZR91EeeDjMvrp8ZYgw" name="RfPort"/>
+                </nestedClassifier>
+              </nestedClassifier>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFZh91EeeDjMvrp8ZYgw" name="DataPort">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFZx91EeeDjMvrp8ZYgw" name="RfPort"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFaB91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFaR91EeeDjMvrp8ZYgw" name="RfPort"/>
+                </nestedClassifier>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFah91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_TRWFax91EeeDjMvrp8ZYgw" name="TX capable">
+                    <ownedComment xmi:type="uml:Comment" xmi:id="_TRWFbB91EeeDjMvrp8ZYgw">
+                      <body></body>
+                    </ownedComment>
+                  </ownedAttribute>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_TRWFbR91EeeDjMvrp8ZYgw" name="RX capable"/>
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFbh91EeeDjMvrp8ZYgw" name="RfPort"/>
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFbx91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                    <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFcB91EeeDjMvrp8ZYgw" name="RfPort"/>
+                  </nestedClassifier>
+                </nestedClassifier>
+              </nestedClassifier>
+              <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFcR91EeeDjMvrp8ZYgw" name="FRE">
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFch91EeeDjMvrp8ZYgw" name="RfPort"/>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFcx91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFdB91EeeDjMvrp8ZYgw" name="RfPort"/>
+                </nestedClassifier>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFdR91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_TRWFdh91EeeDjMvrp8ZYgw" name="TX capable">
+                    <ownedComment xmi:type="uml:Comment" xmi:id="_TRWFdx91EeeDjMvrp8ZYgw">
+                      <body></body>
+                    </ownedComment>
+                  </ownedAttribute>
+                  <ownedAttribute xmi:type="uml:Property" xmi:id="_TRWFeB91EeeDjMvrp8ZYgw" name="RX capable"/>
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFeR91EeeDjMvrp8ZYgw" name="RfPort"/>
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFeh91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                    <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFex91EeeDjMvrp8ZYgw" name="RfPort"/>
+                  </nestedClassifier>
+                </nestedClassifier>
+                <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFfB91EeeDjMvrp8ZYgw" name="DataPort">
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFfR91EeeDjMvrp8ZYgw" name="RfPort"/>
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFfh91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                    <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFfx91EeeDjMvrp8ZYgw" name="RfPort"/>
+                  </nestedClassifier>
+                  <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFgB91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_2">
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_TRWFgR91EeeDjMvrp8ZYgw" name="TX capable">
+                      <ownedComment xmi:type="uml:Comment" xmi:id="_TRWFgh91EeeDjMvrp8ZYgw">
+                        <body></body>
+                      </ownedComment>
+                    </ownedAttribute>
+                    <ownedAttribute xmi:type="uml:Property" xmi:id="_TRWFgx91EeeDjMvrp8ZYgw" name="RX capable"/>
+                    <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFhB91EeeDjMvrp8ZYgw" name="RfPort"/>
+                    <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFhR91EeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
+                      <nestedClassifier xmi:type="uml:Class" xmi:id="_TRWFhh91EeeDjMvrp8ZYgw" name="RfPort"/>
+                    </nestedClassifier>
+                  </nestedClassifier>
+                </nestedClassifier>
+              </nestedClassifier>
+            </nestedClassifier>
+          </nestedClassifier>
+        </nestedClassifier>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_rxzisB91EeeDjMvrp8ZYgw" name="Class1"/>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_hkI09_H7EeaYuI2u_kTC4A">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hkI0-PH7EeaYuI2u_kTC4A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="FunctionTypeConcepts.profile.uml#_79pfVPH7EeaYuI2u_kTC4A"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="FunctionTypeConcepts.profile.uml#_hjf7wPH7EeaYuI2u_kTC4A"/>
+      </profileApplication>
+    </packagedElement>
+    <packagedElement xmi:type="uml:DataType" xmi:id="_Jvk-IPH8EeaYuI2u_kTC4A" name="Mhz"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_0vQXIPOJEeaVCtNpv5jAGQ" name="TopologyModelling">
+      <packagedElement xmi:type="uml:Class" xmi:id="_jg6csPd3Eeajze-wG2FnCg" name="RBBType">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_yD2hsPd3Eeajze-wG2FnCg" name="numOfTx" type="_3H8GoPd3Eeajze-wG2FnCg"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_93w0oPd3Eeajze-wG2FnCg" name="numOfRx" type="_3H8GoPd3Eeajze-wG2FnCg"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_o-OkgPd4Eeajze-wG2FnCg" name="numOfCpriLink"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_CKspcPd4Eeajze-wG2FnCg" name="numbOfRU"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_FJgj8Pd4Eeajze-wG2FnCg" name="ExternalRX"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ImWeQPd4Eeajze-wG2FnCg" name="RUMustBeUsedInSequenceForStandards"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_SkuL4Pd4Eeajze-wG2FnCg" name="CSASR"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_VY_qUPd4Eeajze-wG2FnCg" name="SharedRadio"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_XhdLoPd4Eeajze-wG2FnCg" name="UsedForInst"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_nhN3IPd8Eeajze-wG2FnCg" name="UsedForInstanceNumber"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_sbL2wPd8Eeajze-wG2FnCg" name="RBBType">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_sbL2wfd8Eeajze-wG2FnCg" name="numOfTx" type="_3H8GoPd3Eeajze-wG2FnCg"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_sbL2wvd8Eeajze-wG2FnCg" name="numOfRx" type="_3H8GoPd3Eeajze-wG2FnCg"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_sbL2w_d8Eeajze-wG2FnCg" name="numOfCpriLink"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_sbL2xPd8Eeajze-wG2FnCg" name="numbOfRU"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_sbL2xfd8Eeajze-wG2FnCg" name="ExternalRX"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_sbL2xvd8Eeajze-wG2FnCg" name="RUMustBeUsedInSequenceForStandards"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_sbL2x_d8Eeajze-wG2FnCg" name="CSASR"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_sbL2yPd8Eeajze-wG2FnCg" name="SharedRadio"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_sbL2yfd8Eeajze-wG2FnCg" name="UsedForInst"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_sbL2yvd8Eeajze-wG2FnCg" name="UsedForInstanceNumber"/>
+        </nestedClassifier>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_tkm88Pd8Eeajze-wG2FnCg" name="RBBInstance">
+        <generalization xmi:type="uml:Generalization" xmi:id="_z6qgEPd8Eeajze-wG2FnCg" general="_jg6csPd3Eeajze-wG2FnCg"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_tkm88fd8Eeajze-wG2FnCg" name="numOfTx" type="_3H8GoPd3Eeajze-wG2FnCg"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_tkm88vd8Eeajze-wG2FnCg" name="numOfRx" type="_3H8GoPd3Eeajze-wG2FnCg"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_tkm88_d8Eeajze-wG2FnCg" name="numOfCpriLink"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_tkm89Pd8Eeajze-wG2FnCg" name="numbOfRU"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_tkm89fd8Eeajze-wG2FnCg" name="ExternalRX"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_tkm89vd8Eeajze-wG2FnCg" name="RUMustBeUsedInSequenceForStandards"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_tkm89_d8Eeajze-wG2FnCg" name="CSASR"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_tkm8-Pd8Eeajze-wG2FnCg" name="SharedRadio"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_tkm8-fd8Eeajze-wG2FnCg" name="UsedForInst"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_tkm8-vd8Eeajze-wG2FnCg" name="UsedForInstanceNumber"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_6mRccPd8Eeajze-wG2FnCg" name="radioUnitList"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_tkm8-_d8Eeajze-wG2FnCg" name="RBBType">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_tkm8_Pd8Eeajze-wG2FnCg" name="numOfTx" type="_3H8GoPd3Eeajze-wG2FnCg"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_tkm8_fd8Eeajze-wG2FnCg" name="numOfRx" type="_3H8GoPd3Eeajze-wG2FnCg"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_tkm8_vd8Eeajze-wG2FnCg" name="numOfCpriLink"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_tkm8__d8Eeajze-wG2FnCg" name="numbOfRU"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_tkm9APd8Eeajze-wG2FnCg" name="ExternalRX"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_tkm9Afd8Eeajze-wG2FnCg" name="RUMustBeUsedInSequenceForStandards"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_tkm9Avd8Eeajze-wG2FnCg" name="CSASR"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_tkm9A_d8Eeajze-wG2FnCg" name="SharedRadio"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_tkm9BPd8Eeajze-wG2FnCg" name="UsedForInst"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_tkm9Bfd8Eeajze-wG2FnCg" name="UsedForInstanceNumber"/>
+        </nestedClassifier>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_3H8GoPd3Eeajze-wG2FnCg" name="Integer"/>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_G1fmwB9bEeeDjMvrp8ZYgw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_G1iqEB9bEeeDjMvrp8ZYgw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+    </profileApplication>
+  </uml:Model>
+  <FunctionTypeConcepts:FunctionType xmi:id="_hkI0-fH7EeaYuI2u_kTC4A" base_Class="_ZmtEUPH7EeaYuI2u_kTC4A"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_79pfZvH7EeaYuI2u_kTC4A" base_Class="_yGX4MPH7EeaYuI2u_kTC4A"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_OCfk__H8EeaYuI2u_kTC4A" base_Class="_OCfk0PH8EeaYuI2u_kTC4A"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_OlQUBvH8EeaYuI2u_kTC4A" base_Class="_OlQToPH8EeaYuI2u_kTC4A"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_OlQUB_H8EeaYuI2u_kTC4A" base_Class="_OlQTpfH8EeaYuI2u_kTC4A"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_QnBXEPH8EeaYuI2u_kTC4A" base_Class="_Qm3mEPH8EeaYuI2u_kTC4A"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_QnBXEfH8EeaYuI2u_kTC4A" base_Class="_Qm3mFfH8EeaYuI2u_kTC4A"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_QynjEPH8EeaYuI2u_kTC4A" base_Class="_QydyEPH8EeaYuI2u_kTC4A"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_QynjEfH8EeaYuI2u_kTC4A" base_Class="_QydyFfH8EeaYuI2u_kTC4A"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_Q625EPH8EeaYuI2u_kTC4A" base_Class="_Q6tIEPH8EeaYuI2u_kTC4A"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_Q625EfH8EeaYuI2u_kTC4A" base_Class="_Q6tIFfH8EeaYuI2u_kTC4A"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_UpSSoPH8EeaYuI2u_kTC4A" base_Class="_UpIhoPH8EeaYuI2u_kTC4A"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_UpSSofH8EeaYuI2u_kTC4A" base_Class="_UpIhpfH8EeaYuI2u_kTC4A"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_VLxViPH8EeaYuI2u_kTC4A" base_Class="_VLwtkPH8EeaYuI2u_kTC4A"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_VLxVifH8EeaYuI2u_kTC4A" base_Class="_VLwtmvH8EeaYuI2u_kTC4A"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_VLxVivH8EeaYuI2u_kTC4A" base_Class="_VLwtn_H8EeaYuI2u_kTC4A"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_VLxVi_H8EeaYuI2u_kTC4A" base_Class="_VLwtlfH8EeaYuI2u_kTC4A"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_Vb3ADPH8EeaYuI2u_kTC4A" base_Class="_Vb2_EPH8EeaYuI2u_kTC4A"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_Vb3ADfH8EeaYuI2u_kTC4A" base_Class="_Vb2_GvH8EeaYuI2u_kTC4A"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_Vb3ADvH8EeaYuI2u_kTC4A" base_Class="_Vb2_H_H8EeaYuI2u_kTC4A"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_Vb3AD_H8EeaYuI2u_kTC4A" base_Class="_Vb2_FfH8EeaYuI2u_kTC4A"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_UJkB4POKEeaVCtNpv5jAGQ" base_Class="_UJizxfOKEeaVCtNpv5jAGQ"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_UJko8POKEeaVCtNpv5jAGQ" base_Class="_UJizwPOKEeaVCtNpv5jAGQ"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_UStW0POKEeaVCtNpv5jAGQ" base_Class="_USsItfOKEeaVCtNpv5jAGQ"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_USuk8POKEeaVCtNpv5jAGQ" base_Class="_USsIsPOKEeaVCtNpv5jAGQ"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_UUnbUPOKEeaVCtNpv5jAGQ" base_Class="_UUmNNfOKEeaVCtNpv5jAGQ"/>
+  <FunctionTypeConcepts:DemandModuleType xmi:id="_UUoCYPOKEeaVCtNpv5jAGQ" base_Class="_UUmNMPOKEeaVCtNpv5jAGQ"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_ciIyAB9eEeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_iRx1YB9eEeeDjMvrp8ZYgw" base_Comment="_iRwnQB9eEeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_zFcm4B9eEeeDjMvrp8ZYgw" base_Comment="_zFYVch9eEeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_1KSMcB9eEeeDjMvrp8ZYgw" base_Comment="_1KN7CR9eEeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_4kDvMB9fEeeDjMvrp8ZYgw" base_Comment="_4j-2th9fEeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_6OEZ8B9fEeeDjMvrp8ZYgw" base_Comment="_6N9sRh9fEeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_6OFBAB9fEeeDjMvrp8ZYgw" base_Comment="_6N9sUR9fEeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_Uec9gB9gEeeDjMvrp8ZYgw" base_Comment="_UeWP1h9gEeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_UeeLoB9gEeeDjMvrp8ZYgw" base_Comment="_UeWP4R9gEeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_YqVIEB9gEeeDjMvrp8ZYgw" base_Comment="_YqL-Jh9gEeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_YqWWMB9gEeeDjMvrp8ZYgw" base_Comment="_YqL-Rx9gEeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_YqWWMR9gEeeDjMvrp8ZYgw" base_Comment="_YqL-MR9gEeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_YqW9QB9gEeeDjMvrp8ZYgw" base_Comment="_YqL-PB9gEeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_cqQhUB9gEeeDjMvrp8ZYgw" base_Comment="_cqIlnB9gEeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_cqRIYB9gEeeDjMvrp8ZYgw" base_Comment="_cqIlhh9gEeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_cqRvcB9gEeeDjMvrp8ZYgw" base_Comment="_cqIlpx9gEeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_cqSWgB9gEeeDjMvrp8ZYgw" base_Comment="_cqIlkR9gEeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_zNVVkB90EeeDjMvrp8ZYgw" base_Comment="_zNIhQR90EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_zNWjsB90EeeDjMvrp8ZYgw" base_Comment="_zNIhYh90EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_zNXKwB90EeeDjMvrp8ZYgw" base_Comment="_zNIhTB90EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_zNXx0B90EeeDjMvrp8ZYgw" base_Comment="_zNIhVx90EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_zgZbgB90EeeDjMvrp8ZYgw" base_Comment="_zgRfth90EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_zgapoB90EeeDjMvrp8ZYgw" base_Comment="_zgRf1x90EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_zgbQsB90EeeDjMvrp8ZYgw" base_Comment="_zgRfwR90EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_zgb3wB90EeeDjMvrp8ZYgw" base_Comment="_zgRfzB90EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_0W93IB90EeeDjMvrp8ZYgw" base_Comment="_0WsxZh90EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_0W_sUB90EeeDjMvrp8ZYgw" base_Comment="_0Wsx1B90EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_0XATYB90EeeDjMvrp8ZYgw" base_Comment="_0WsxcR90EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_0XATYR90EeeDjMvrp8ZYgw" base_Comment="_0WsxfB90EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_0XA6cB90EeeDjMvrp8ZYgw" base_Comment="_0Wsx3x90EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_0XBhgB90EeeDjMvrp8ZYgw" base_Comment="_0Wsxvh90EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_0XCIkB90EeeDjMvrp8ZYgw" base_Comment="_0Wsxkh90EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_0XCvoB90EeeDjMvrp8ZYgw" base_Comment="_0WsxyR90EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_0XDWsB90EeeDjMvrp8ZYgw" base_Comment="_0Wsxhx90EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_0XD9wB90EeeDjMvrp8ZYgw" base_Comment="_0Wsxsx90EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_0XD9wR90EeeDjMvrp8ZYgw" base_Comment="_0WsxqB90EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_0XFL4B90EeeDjMvrp8ZYgw" base_Comment="_0WsxnR90EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_9veeoB90EeeDjMvrp8ZYgw" base_Comment="_9u86lB90EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_9vfswB90EeeDjMvrp8ZYgw" base_Comment="_9u8TlB90EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_9vgT0B90EeeDjMvrp8ZYgw" base_Comment="_9u8TPB90EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_9vg64B90EeeDjMvrp8ZYgw" base_Comment="_9u86Uh90EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_9vg64R90EeeDjMvrp8ZYgw" base_Comment="_9u86fh90EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_9vhh8B90EeeDjMvrp8ZYgw" base_Comment="_9u86MR90EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_9viwEB90EeeDjMvrp8ZYgw" base_Comment="_9u8TUh90EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_9vjXIB90EeeDjMvrp8ZYgw" base_Comment="_9u86Rx90EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_9vj-MB90EeeDjMvrp8ZYgw" base_Comment="_9u8Tqh90EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_9vj-MR90EeeDjMvrp8ZYgw" base_Comment="_9u86nx90EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_9vklQB90EeeDjMvrp8ZYgw" base_Comment="_9u8Tcx90EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_9vlMUB90EeeDjMvrp8ZYgw" base_Comment="_9u8TaB90EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_9vlzYB90EeeDjMvrp8ZYgw" base_Comment="_9u86PB90EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_9vmacB90EeeDjMvrp8ZYgw" base_Comment="_9u8TJh90EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_9vmacR90EeeDjMvrp8ZYgw" base_Comment="_9u86iR90EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_9vnBgB90EeeDjMvrp8ZYgw" base_Comment="_9u8TMR90EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_9vnokB90EeeDjMvrp8ZYgw" base_Comment="_9u8Tnx90EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_9voPoB90EeeDjMvrp8ZYgw" base_Comment="_9u86aB90EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_9voPoR90EeeDjMvrp8ZYgw" base_Comment="_9u8Tfh90EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_9vo2sB90EeeDjMvrp8ZYgw" base_Comment="_9u86XR90EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_9vqE0B90EeeDjMvrp8ZYgw" base_Comment="_9u8TiR90EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_9vqr4B90EeeDjMvrp8ZYgw" base_Comment="_9u86cx90EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_9vrS8B90EeeDjMvrp8ZYgw" base_Comment="_9u8TRx90EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_9vshEB90EeeDjMvrp8ZYgw" base_Comment="_9u8TXR90EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_TR7TcB91EeeDjMvrp8ZYgw" base_Comment="_TRWExx91EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_TR8hkB91EeeDjMvrp8ZYgw" base_Comment="_TRWE_h91EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_TR9IoB91EeeDjMvrp8ZYgw" base_Comment="_TRWFgh91EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_TR9vsB91EeeDjMvrp8ZYgw" base_Comment="_TRWFVh91EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_TR-WwB91EeeDjMvrp8ZYgw" base_Comment="_TRVdrB91EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_TR-90B91EeeDjMvrp8ZYgw" base_Comment="_TRWFSx91EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_TSAL8B91EeeDjMvrp8ZYgw" base_Comment="_TRWFHx91EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_TSAzAB91EeeDjMvrp8ZYgw" base_Comment="_TRWE0h91EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_TSBaEB91EeeDjMvrp8ZYgw" base_Comment="_TRWE3R91EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_TSCBIB91EeeDjMvrp8ZYgw" base_Comment="_TRWFKh91EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_TSCoMB91EeeDjMvrp8ZYgw" base_Comment="_TRWFYR91EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_TSDPQB91EeeDjMvrp8ZYgw" base_Comment="_TRWFNR91EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_TSDPQR91EeeDjMvrp8ZYgw" base_Comment="_TRWEph91EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_TSD2UB91EeeDjMvrp8ZYgw" base_Comment="_TRWE8x91EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_TSEdYB91EeeDjMvrp8ZYgw" base_Comment="_TRWFFB91EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_TSFEcB91EeeDjMvrp8ZYgw" base_Comment="_TRWFQB91EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_TSFrgB91EeeDjMvrp8ZYgw" base_Comment="_TRWEsR91EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_TSGSkB91EeeDjMvrp8ZYgw" base_Comment="_TRVdoR91EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_TSG5oB91EeeDjMvrp8ZYgw" base_Comment="_TRWE6B91EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_TSHgsB91EeeDjMvrp8ZYgw" base_Comment="_TRWEvB91EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_TSHgsR91EeeDjMvrp8ZYgw" base_Comment="_TRWFCR91EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_TSIHwB91EeeDjMvrp8ZYgw" base_Comment="_TRWFbB91EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_TSJ88B91EeeDjMvrp8ZYgw" base_Comment="_TRVdlh91EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_TSLLEB91EeeDjMvrp8ZYgw" base_Comment="_TRWFdx91EeeDjMvrp8ZYgw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+</xmi:XMI>

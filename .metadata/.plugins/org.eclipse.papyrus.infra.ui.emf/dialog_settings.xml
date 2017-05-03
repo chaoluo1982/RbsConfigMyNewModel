@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history_container_platform:/resource/RBSConfiguratioinReferenceConcreteModel/RBSConfigurationReferenceModel.uml:uml:Type:type">
+		<section name="History">
+			<list key="PreviousSelection">
+				<item value="platform:/resource/RBSConfiguratioinReferenceConcreteModel/RBSConfigurationReferenceModel.uml#_gMrIMPH6EeaYuI2u_kTC4A"/>
+				<item value="platform:/resource/RBSConfiguratioinReferenceConcreteModel/RBSConfigurationReferenceModel.uml#_LY46wPH7EeaYuI2u_kTC4A"/>
+			</list>
+		</section>
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.customizationManager">
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history__platform:/resource/RBSConfiguratioinReferenceConcreteModel/RBSConfigurationReferenceModel.uml:uml:Type:type">
+		<section name="History">
+			<list key="PreviousSelection">
+				<item value="platform:/resource/RBSConfiguratioinReferenceConcreteModel/RBSConfigurationReferenceModel.uml#_Jvk-IPH8EeaYuI2u_kTC4A"/>
+			</list>
+		</section>
+	</section>
+</section>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_hjf7wPH7EeaYuI2u_kTC4A" name="FunctionTypeConcepts" metaclassReference="_hj16APH7EeaYuI2u_kTC4A">
+  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hj_D8fH7EeaYuI2u_kTC4A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_79pfVPH7EeaYuI2u_kTC4A" name="FunctionTypeConcepts" nsURI="http:///schemas/FunctionTypeConcepts/_79pfU_H7EeaYuI2u_kTC4A/1" nsPrefix="FunctionTypeConcepts">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_79pfX_H7EeaYuI2u_kTC4A" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_79pfYPH7EeaYuI2u_kTC4A" key="Version" value="0.0.2"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_79pfYfH7EeaYuI2u_kTC4A" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_79pfYvH7EeaYuI2u_kTC4A" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_79pfY_H7EeaYuI2u_kTC4A" key="Date" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_79pfZPH7EeaYuI2u_kTC4A" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_79pfVfH7EeaYuI2u_kTC4A" name="FunctionType">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_79pfVvH7EeaYuI2u_kTC4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_hjhJ4PH7EeaYuI2u_kTC4A"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_79pfV_H7EeaYuI2u_kTC4A" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_79pfWfH7EeaYuI2u_kTC4A" name="DemandModuleType">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_79pfWvH7EeaYuI2u_kTC4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_79UIIPH7EeaYuI2u_kTC4A"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_79pfW_H7EeaYuI2u_kTC4A" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_hj_D8vH7EeaYuI2u_kTC4A" name="FunctionTypeConcepts" nsURI="http:///schemas/FunctionTypeConcepts/_hj_D8PH7EeaYuI2u_kTC4A/0" nsPrefix="FunctionTypeConcepts">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hkI08fH7EeaYuI2u_kTC4A" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_hkI08vH7EeaYuI2u_kTC4A" key="Version" value="0.0.1"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_hkI08_H7EeaYuI2u_kTC4A" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_hkI09PH7EeaYuI2u_kTC4A" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_hkI09fH7EeaYuI2u_kTC4A" key="Date" value="2/13/17 3:48 PM"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_hkI09vH7EeaYuI2u_kTC4A" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_hj_D8_H7EeaYuI2u_kTC4A" name="FunctionType">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hj_D9PH7EeaYuI2u_kTC4A" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_hjhJ4PH7EeaYuI2u_kTC4A"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_hj_D9fH7EeaYuI2u_kTC4A" name="base_Class" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Class"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+  </eAnnotations>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_hj16APH7EeaYuI2u_kTC4A">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_hjhJ4PH7EeaYuI2u_kTC4A" name="FunctionType">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_hj16A_H7EeaYuI2u_kTC4A" name="base_Class" association="_hj16AfH7EeaYuI2u_kTC4A">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_hj16AfH7EeaYuI2u_kTC4A" name="Class_FunctionType" memberEnd="_hj16AvH7EeaYuI2u_kTC4A _hj16A_H7EeaYuI2u_kTC4A">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_hj16AvH7EeaYuI2u_kTC4A" name="extension_FunctionType" type="_hjhJ4PH7EeaYuI2u_kTC4A" aggregation="composite" association="_hj16AfH7EeaYuI2u_kTC4A"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_79UIIPH7EeaYuI2u_kTC4A" name="DemandModuleType">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_79pfUvH7EeaYuI2u_kTC4A" name="base_Class" association="_79pfUPH7EeaYuI2u_kTC4A">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Class"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_79pfUPH7EeaYuI2u_kTC4A" name="Class_DemandModuleType" memberEnd="_79pfUfH7EeaYuI2u_kTC4A _79pfUvH7EeaYuI2u_kTC4A">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_79pfUfH7EeaYuI2u_kTC4A" name="extension_DemandModuleType" type="_79UIIPH7EeaYuI2u_kTC4A" aggregation="composite" association="_79pfUPH7EeaYuI2u_kTC4A"/>
+  </packagedElement>
+</uml:Profile>
