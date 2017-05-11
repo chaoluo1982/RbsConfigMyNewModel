@@ -6,7 +6,7 @@
         <body>several carrier(coverage DM) belongs to same sector</body>
       </ownedComment>
       <ownedComment xmi:type="uml:Comment" xmi:id="_qoOK0B99EeeQOtqO30FsHQ">
-        <body>SectorAntennaCoverage will be connected with RBBRfPort, like Antenna connected with radio RfPort</body>
+        <body>AntennaBranch will be connected with RBBRfPort</body>
       </ownedComment>
       <ownedComment xmi:type="uml:Comment" xmi:id="_88EVoB99EeeQOtqO30FsHQ">
         <body>When we need mapping RBBRU to real FRE RU datasheet, we need generate RBBInstances.&#xD;
@@ -354,6 +354,7 @@ We could maitain a small sets inputs, and generate RBBInstances based on those i
         <ownedAttribute xmi:type="uml:Property" xmi:id="_gN_KMC_cEeemwYbvEn4e2A" name="RATType"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_s8SzYC_dEeemwYbvEn4e2A" name="CoverageType"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_CtbnoC_iEeemwYbvEn4e2A" name="numOfTXRX"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_-ZnFEDFtEeeEa7kK3RPdwA" name="RadioSiteLocation"/>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_IpBZ4B9bEeeDjMvrp8ZYgw" name="CoverageGroup"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_lp96MB9TEeeDjMvrp8ZYgw" memberEnd="_lp_vYB9TEeeDjMvrp8ZYgw _lp_vYR9TEeeDjMvrp8ZYgw">
@@ -427,6 +428,7 @@ We could maitain a small sets inputs, and generate RBBInstances based on those i
         </nestedClassifier>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_1KN7AB9eEeeDjMvrp8ZYgw" name="RBBDataPort">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_2fcH0DYjEeewDcwH73sidQ" name="hasAlternative"/>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_1KN7BB9eEeeDjMvrp8ZYgw" name="RfPort"/>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_1KN7BR9eEeeDjMvrp8ZYgw" name="CopyOf_RfPort_1">
           <nestedClassifier xmi:type="uml:Class" xmi:id="_1KN7Bh9eEeeDjMvrp8ZYgw" name="RfPort"/>
@@ -1999,8 +2001,8 @@ We could maitain a small sets inputs, and generate RBBInstances based on those i
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zrMZcB94EeeQOtqO30FsHQ" key="nature" value="UML_Nature"/>
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_zrNnkB94EeeQOtqO30FsHQ" name="dataport" type="_cqIlgB9gEeeDjMvrp8ZYgw" association="_zrKkQB94EeeQOtqO30FsHQ">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_n8uxwB95EeeQOtqO30FsHQ" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_n89bQB95EeeQOtqO30FsHQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_n8uxwB95EeeQOtqO30FsHQ" value="2"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_n89bQB95EeeQOtqO30FsHQ" value="2"/>
         </ownedEnd>
         <ownedEnd xmi:type="uml:Property" xmi:id="_zrNAgB94EeeQOtqO30FsHQ" type="_9u8TIB90EeeDjMvrp8ZYgw" association="_zrKkQB94EeeQOtqO30FsHQ">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__2D-YB95EeeQOtqO30FsHQ"/>
@@ -2028,8 +2030,8 @@ We could maitain a small sets inputs, and generate RBBInstances based on those i
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dgn7EB-AEeeQOtqO30FsHQ" key="nature" value="UML_Nature"/>
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_dgpJMB-AEeeQOtqO30FsHQ" name="dataport" type="_YqL-IB9gEeeDjMvrp8ZYgw" association="_dgjpoB-AEeeQOtqO30FsHQ">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rmELwB-AEeeQOtqO30FsHQ" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rmx9cB-AEeeQOtqO30FsHQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rmELwB-AEeeQOtqO30FsHQ" value="2"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rmx9cB-AEeeQOtqO30FsHQ" value="2"/>
         </ownedEnd>
         <ownedEnd xmi:type="uml:Property" xmi:id="_dgn7ER-AEeeQOtqO30FsHQ" name="internaldigitalcable" type="_rxzisB91EeeDjMvrp8ZYgw" association="_dgjpoB-AEeeQOtqO30FsHQ">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uzzTEB-AEeeQOtqO30FsHQ"/>
@@ -4219,8 +4221,9 @@ We could maitain a small sets inputs, and generate RBBInstances based on those i
         <ownedEnd xmi:type="uml:Property" xmi:id="_6CFyECZzEeeZMrdGOsEuVA" name="dataport1" type="_sze_kCZvEeeZMrdGOsEuVA" association="_6CD84CZzEeeZMrdGOsEuVA"/>
         <ownedEnd xmi:type="uml:Property" xmi:id="_6CFLASZzEeeZMrdGOsEuVA" name="internaldigitalcable" type="_AOQ9QCZwEeeZMrdGOsEuVA" association="_6CD84CZzEeeZMrdGOsEuVA"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_ECmVsC_gEeemwYbvEn4e2A" name="AntennaUnitGroup">
+      <packagedElement xmi:type="uml:Class" xmi:id="_ECmVsC_gEeemwYbvEn4e2A" name="Antenna">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_wEoyoDAEEee7kYOEJB3R1w" name="location"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_KqErADDHEeeEa7kK3RPdwA" name=" ?"/>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_ECmVtC_gEeemwYbvEn4e2A" name="CoverageGroup"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_OjVwkC_gEeemwYbvEn4e2A" memberEnd="_OjeTcC_gEeemwYbvEn4e2A _Oje6gC_gEeemwYbvEn4e2A">

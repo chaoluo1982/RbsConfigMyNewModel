@@ -1,0 +1,38 @@
+﻿22
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	modified:   .metadata/.bak_0.log
+#	modified:   .metadata/.log
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.history/2d/30a8659ae12f00171d0ca1827e472221
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.history/35/6083a34a013000171aa18550b4a44392
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.history/4d/2082e4d3043000171aa18550b4a44392
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.history/4e/a09834ff0b30001717338d2a58bcc10a
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.history/65/f07c5082f72f00171d0ca1827e472221
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.history/70/b06cba92fa2f00171d0ca1827e472221
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.history/9a/c09f9519e22f00171d0ca1827e472221
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.history/9c/806dbe31e12f00171d0ca1827e472221
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.history/c/009c99e8fa2f00171d0ca1827e472221
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.history/cc/f0e20e63013000171aa18550b4a44392
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.history/db/f0b469b1f42f00171d0ca1827e472221
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.history/f2/c007772bfa2f00171d0ca1827e472221
+#	modified:   .metadata/.plugins/org.eclipse.core.resources/.projects/RBSConfiguratioinReferenceConcreteModel/.indexes/history.index
+#	renamed:    .metadata/.plugins/org.eclipse.core.resources/.root/5.tree -> .metadata/.plugins/org.eclipse.core.resources/.root/6.tree
+#	modified:   .metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources
+#	deleted:    .metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.papyrus.infra.emf.5
+#	new file:   .metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.papyrus.infra.emf.6
+#	modified:   .metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
+#	modified:   .metadata/.plugins/org.eclipse.gmf.runtime.diagram.ui/_2VinAB9QEeeDjMvrp8ZYgw
+#	modified:   .metadata/.plugins/org.eclipse.gmf.runtime.diagram.ui/_ltzv4CXLEeeZMrdGOsEuVA
+#	modified:   .metadata/.plugins/org.eclipse.papyrus.infra.core/RBSConfiguratioinReferenceConcreteModel/RBSConfigurationReferenceModel.sash
+#	renamed:    .metadata/.plugins/org.eclipse.papyrus.infra.emf/index/papyrusCrossRefs.5 -> .metadata/.plugins/org.eclipse.papyrus.infra.emf/index/papyrusCrossRefs.6
+#	renamed:    .metadata/.plugins/org.eclipse.papyrus.infra.emf/index/papyrusUMLProfiles.5 -> .metadata/.plugins/org.eclipse.papyrus.infra.emf/index/papyrusUMLProfiles.6
+#	deleted:    .metadata/.plugins/org.eclipse.xtext.builder/builder.state
+#	modified:   .metadata/version.ini
+#	modified:   RBSConfiguratioinReferenceConcreteModel/RBSConfigurationReferenceModel.notation
+#	modified:   RBSConfiguratioinReferenceConcreteModel/RBSConfigurationReferenceModel.uml
+#
+
